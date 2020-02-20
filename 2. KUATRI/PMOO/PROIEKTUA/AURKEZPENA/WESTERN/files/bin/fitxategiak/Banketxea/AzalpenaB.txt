@@ -1,0 +1,8 @@
+﻿
+Bandako etsaiak aurkitu dituzu! Orain egin dezakezuna tiro
+egin, inbentarioko objekturen bat erabili edo mugitu da
+(mugimendu bat txanda bakoitzeko). Zure helburua, logikoa
+denez, banda sarraskitzea da.
+
+Pitiak +10 egiten dizu bizitzan, kapelak +50 eta likoreak +100.
+Kontuz, bakarrik behin erabili ahal dituzu! Animo eta zorte on!

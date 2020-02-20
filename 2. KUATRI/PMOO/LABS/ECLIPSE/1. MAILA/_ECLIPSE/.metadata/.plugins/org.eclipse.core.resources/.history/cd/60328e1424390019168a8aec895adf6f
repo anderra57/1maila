@@ -1,0 +1,52 @@
+package packlaborategia4;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class ListaBezeroakTest {
+
+	ListaBezeroak lista1= ListaBezeroak.getNireListaBezeroak();
+		
+	Bezeroa b1,b2;
+	    
+	@Before
+	public void setUp() throws Exception {
+		/*public Bezeroa(int pId, String pIzenAbizena, String pPasaHitza,
+		double pSaldoa, boolean pBerezia)*/
+		//lista1.add(0,"","",0.0,false);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testBilatuBezeroaIdz() {
+		//fail("Not yet implemented");
+	}
+
+	@Test
+	public void testBezeroKopurua() {
+		assertEquals(lista1.bezeroKopurua(),0);
+	}
+
+	@Test
+	public void testGehituBezero() {
+		lista1.gehituBezero(1, "Cepeda CalBo", "cepedacalvo", 54180.00, true);
+		assertEquals(lista1.bezeroKopurua(),1);
+		lista1.gehituBezero(2, "Ander Prieto", "1ae2xdddnotevoyadarmipass", 5757.57, true);
+		assertEquals(lista1.bezeroKopurua(),1);
+		lista1.gehituBezero(2, "Ander Prieto", "1ae2xdddnotevoyadarmipass", 5757.57, true);
+		assertEquals(lista1.bezeroKopurua(),1);
+	}
+
+	@Test
+	public void testErreseteatu() {
+		lista1.erreseteatu();
+		assertEquals(lista1.bezeroKopurua(),0);
+	}
+
+}

@@ -1,0 +1,23 @@
+public void gehituPertsona(Pertsona pPertsona){
+}
+
+public void ezabatuPertsona(Pertsona pPertsona){
+int ind;
+ind=this.bilatuPertsonarenPos(pPertsona);
+if(ind!=-1){
+	this.luzeraTxikitu();
+	this.desplazatuEzkerrera(ind);
+	}
+}
+
+public listaPertsonakArrayListekin(){
+this.lista= ****new**** /* <- EZ AHAZTU */ ArrayList <Pertsona>();
+}
+
+public void gehituPertsona(Pertsona pPer){
+this.lista.add(pPer);
+}
+
+public void ezabatuPertsona(Pertsona pPer){
+this.lista.remove(pPer);
+}

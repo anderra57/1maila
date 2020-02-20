@@ -1,0 +1,585 @@
+{\rtf1\ansi\deff0\deftab480
+
+{\fonttbl
+{\f000 Courier New;}
+{\f001 Courier New;}
+{\f002 Courier New;}
+{\f003 Courier New;}
+{\f004 Courier New;}
+{\f005 Courier New;}
+{\f006 Courier New;}
+{\f007 Courier New;}
+{\f008 Courier New;}
+{\f009 Courier New;}
+{\f010 Courier New;}
+}
+
+{\colortbl
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red000\green128\blue000;
+\red255\green255\blue255;
+\red000\green128\blue000;
+\red255\green255\blue255;
+\red255\green128\blue000;
+\red255\green255\blue255;
+\red000\green000\blue255;
+\red255\green255\blue255;
+\red128\green128\blue128;
+\red255\green255\blue255;
+\red128\green128\blue128;
+\red255\green255\blue255;
+\red000\green000\blue128;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red128\green000\blue255;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+}
+
+\f0\fs20\cb21\cf20 \highlight19\cf18 package\highlight1\cf0  \highlight17\cf16 packproiektua\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\par
+\highlight9\cf8\b import\highlight1\cf0\b0  \highlight17\cf16 java\highlight15\cf14\b .\highlight17\cf16\b0 io\highlight15\cf14\b .\highlight17\cf16\b0 BufferedReader\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\highlight9\cf8\b import\highlight1\cf0\b0  \highlight17\cf16 java\highlight15\cf14\b .\highlight17\cf16\b0 io\highlight15\cf14\b .\highlight17\cf16\b0 FileNotFoundException\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\highlight9\cf8\b import\highlight1\cf0\b0  \highlight17\cf16 java\highlight15\cf14\b .\highlight17\cf16\b0 io\highlight15\cf14\b .\highlight17\cf16\b0 FileReader\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\highlight9\cf8\b import\highlight1\cf0\b0  \highlight17\cf16 java\highlight15\cf14\b .\highlight17\cf16\b0 io\highlight15\cf14\b .\highlight17\cf16\b0 IOException\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\highlight9\cf8\b import\highlight1\cf0\b0  \highlight17\cf16 java\highlight15\cf14\b .\highlight17\cf16\b0 util\highlight15\cf14\b .\highlight17\cf16\b0 Iterator\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\par
+\highlight19\cf18 public\highlight1\cf0  \highlight19\cf18 class\highlight1\cf0  \highlight17\cf16 Akzioa\highlight1\cf0  \highlight15\cf14\b \{\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 private\highlight1\cf0  \highlight17\cf16 String\highlight1\cf0  \highlight17\cf16 izena\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 private\highlight1\cf0  \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 ident\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 private\highlight1\cf0  \highlight19\cf18 boolean\highlight1\cf0  \highlight17\cf16 kutxa\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 private\highlight1\cf0  \highlight19\cf18 static\highlight1\cf0  \highlight19\cf18 boolean\highlight1\cf0  \highlight17\cf16 objetuak1\highlight15\cf14\b =\highlight9\cf8 false\highlight15\cf14 ;\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 private\highlight1\cf0  \highlight19\cf18 static\highlight1\cf0  \highlight19\cf18 boolean\highlight1\cf0  \highlight17\cf16 objetuak2\highlight15\cf14\b =\highlight9\cf8 false\highlight15\cf14 ;\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 private\highlight1\cf0  \highlight19\cf18 static\highlight1\cf0  \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 kont\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight7\cf6 0\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \par
+\tab \highlight19\cf18 public\highlight1\cf0  \highlight17\cf16 Akzioa\highlight15\cf14\b (\highlight17\cf16\b0 String\highlight1\cf0  \highlight17\cf16 pIzena\highlight15\cf14\b ,\highlight19\cf18\b0 int\highlight1\cf0  \highlight17\cf16 pIdent\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 izena\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 pIzena\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b =\highlight17\cf16\b0 pIdent\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 public\highlight1\cf0  \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 getIdent\highlight15\cf14\b ()\{\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b return\highlight1\cf0\b0  \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 public\highlight1\cf0  \highlight19\cf18 boolean\highlight1\cf0  \highlight17\cf16 kutxa\highlight15\cf14\b ()\{\highlight1\cf0\b0 \par
+\tab \tab \highlight19\cf18 boolean\highlight1\cf0  \highlight17\cf16 kutxa_da\highlight15\cf14\b =\highlight9\cf8 true\highlight15\cf14 ;\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b return\highlight1\cf0\b0  \highlight17\cf16 kutxa_da\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 public\highlight1\cf0  \highlight19\cf18 void\highlight1\cf0  \highlight17\cf16 setObjetuak1\highlight15\cf14\b (\highlight19\cf18\b0 boolean\highlight1\cf0  \highlight17\cf16 pO\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 objetuak1\highlight15\cf14\b =\highlight17\cf16\b0 pO\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 public\highlight1\cf0  \highlight19\cf18 void\highlight1\cf0  \highlight17\cf16 setObjetuak2\highlight15\cf14\b (\highlight19\cf18\b0 boolean\highlight1\cf0  \highlight17\cf16 pO\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 objetuak2\highlight15\cf14\b =\highlight17\cf16\b0 pO\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 public\highlight1\cf0  \highlight19\cf18 void\highlight1\cf0  \highlight17\cf16 kont\highlight15\cf14\b ()\{\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 kont\highlight15\cf14\b =\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 kont\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \par
+\tab \highlight19\cf18 public\highlight1\cf0  \highlight17\cf16 ListaEtsaiak\highlight1\cf0  \highlight17\cf16 berdinakDira\highlight15\cf14\b ()\{\highlight1\cf0\b0 \par
+\tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 px\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Protagonista\highlight15\cf14\b .\highlight17\cf16\b0 getNireProtagonista\highlight15\cf14\b ().\highlight17\cf16\b0 getX\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 py\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Protagonista\highlight15\cf14\b .\highlight17\cf16\b0 getNireProtagonista\highlight15\cf14\b ().\highlight17\cf16\b0 getY\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 Etsaia\highlight1\cf0  \highlight17\cf16 e\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight9\cf8\b null\highlight15\cf14 ;\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 ListaEtsaiak\highlight1\cf0  \highlight17\cf16 l1\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Banketxea\highlight15\cf14\b .\highlight17\cf16\b0 getNireBanketxea\highlight15\cf14\b ().\highlight17\cf16\b0 lortuEtsaiakBanketxetik\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 ListaEtsaiak\highlight1\cf0  \highlight17\cf16 l2\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight9\cf8\b new\highlight1\cf0\b0  \highlight17\cf16 ListaEtsaiak\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 Iterator\highlight15\cf14\b <\highlight17\cf16\b0 Etsaia\highlight15\cf14\b >\highlight1\cf0\b0  \highlight17\cf16 itr\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 l1\highlight15\cf14\b .\highlight17\cf16\b0 getIteradorea\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b while\highlight15\cf14 (\highlight17\cf16\b0 itr\highlight15\cf14\b .\highlight17\cf16\b0 hasNext\highlight15\cf14\b ())\{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 e\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 itr\highlight15\cf14\b .\highlight17\cf16\b0 next\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 ex\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 e\highlight15\cf14\b .\highlight17\cf16\b0 getX\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 ey\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 e\highlight15\cf14\b .\highlight17\cf16\b0 getY\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 px\highlight15\cf14\b ==\highlight17\cf16\b0 ex\highlight15\cf14\b )||(\highlight17\cf16\b0 py\highlight15\cf14\b ==\highlight17\cf16\b0 ey\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 l2\highlight15\cf14\b .\highlight17\cf16\b0 etsaiaGehitu\highlight15\cf14\b (\highlight17\cf16\b0 e\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b return\highlight1\cf0\b0  \highlight17\cf16 l2\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 public\highlight1\cf0  \highlight19\cf18 void\highlight1\cf0  \highlight17\cf16 akzioaBurutu\highlight15\cf14\b (\highlight19\cf18\b0 int\highlight1\cf0  \highlight17\cf16 pEgoera\highlight15\cf14\b )\highlight1\cf0\b0  \highlight9\cf8\b throws\highlight1\cf0\b0  \highlight17\cf16 FileNotFoundException\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 IOException\highlight15\cf14\b \{\highlight1\cf0\b0 \par
+\tab \tab \par
+\tab \tab \highlight5\cf4 //int lag=Teklatua.getNireTeklatua().irakurriZenb();\par
+\highlight1\cf0 \tab \tab \par
+\tab \tab \par
+\tab \tab \highlight17\cf16 Boolean\highlight1\cf0  \highlight17\cf16 giltza\highlight15\cf14\b =\highlight9\cf8 false\highlight15\cf14 ;\highlight1\cf0\b0  \highlight5\cf4 //Apaizarekin hitz egin eta gero true bihurtuko da\par
+\highlight1\cf0 \tab \tab \highlight17\cf16 Protagonista\highlight1\cf0  \highlight17\cf16 p\highlight15\cf14\b =\highlight17\cf16\b0 Protagonista\highlight15\cf14\b .\highlight17\cf16\b0 getNireProtagonista\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 Saloia\highlight1\cf0  \highlight17\cf16 saloia\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Saloia\highlight15\cf14\b .\highlight17\cf16\b0 getNireSaloia\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+    \tab \highlight17\cf16 Hilerria\highlight1\cf0  \highlight17\cf16 hilerria\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Hilerria\highlight15\cf14\b .\highlight17\cf16\b0 getNireHilerria\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+    \tab \highlight17\cf16 Banketxea\highlight1\cf0  \highlight17\cf16 banketxea\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Banketxea\highlight15\cf14\b .\highlight17\cf16\b0 getNireBanketxea\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+    \tab \par
+\tab \tab \par
+\tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 pEgoera\highlight15\cf14\b ==\highlight7\cf6\b0 1\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 1\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preX\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getX\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab     \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preY\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getY\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 deletePertsonaiaMatrizetik\highlight15\cf14\b (\highlight17\cf16\b0 preX\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 preY\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight7\cf6\b0 12\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight7\cf6 4\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 setPertsonaiaMatrizean\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab     \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 eszenatokiaInprimatu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Tabernariarengana hurbildu zara eta berarekin hitz egiten saiatu zara..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 dialogoaBurutu\highlight15\cf14\b ())\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 FitxeroakIrakurri\highlight15\cf14\b .\highlight17\cf16\b0 fitxeroaErakutsi\highlight15\cf14\b (\highlight11\cf10\b0 "Saloia/Tabernaria_T.txt"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 ListaAkzioa\highlight1\cf0  \highlight17\cf16 listaAk\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight9\cf8\b new\highlight1\cf0\b0  \highlight17\cf16 ListaAkzioa\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 listaAk\highlight15\cf14\b .\highlight17\cf16\b0 setKutxaT\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 kutxaAgertu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 FitxeroakIrakurri\highlight15\cf14\b .\highlight17\cf16\b0 fitxeroaErakutsi\highlight15\cf14\b (\highlight11\cf10\b0 "Saloia/Tabernaria_F.txt"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 2\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preX\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getX\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab     \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preY\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getY\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 deletePertsonaiaMatrizetik\highlight15\cf14\b (\highlight17\cf16\b0 preX\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 preY\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight7\cf6\b0 4\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight7\cf6 16\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 setPertsonaiaMatrizean\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab     \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 eszenatokiaInprimatu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Prostitutarengana hurbildu zara eta berarekin hitz egiten saiatu zara..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 dialogoaBurutu\highlight15\cf14\b ())\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 FitxeroakIrakurri\highlight15\cf14\b .\highlight17\cf16\b0 fitxeroaErakutsi\highlight15\cf14\b (\highlight11\cf10\b0 "Saloia/Prostituta_T.txt"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 FitxeroakIrakurri\highlight15\cf14\b .\highlight17\cf16\b0 fitxeroaErakutsi\highlight15\cf14\b (\highlight11\cf10\b0 "Saloia/Prostituta_F.txt"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 3\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preX\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getX\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab     \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preY\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getY\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 deletePertsonaiaMatrizetik\highlight15\cf14\b (\highlight17\cf16\b0 preX\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 preY\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight7\cf6\b0 7\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight7\cf6 7\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 setPertsonaiaMatrizean\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab     \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 eszenatokiaInprimatu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Gizon zaharrarenga hurbidu zara..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 FitxeroakIrakurri\highlight15\cf14\b .\highlight17\cf16\b0 fitxeroaErakutsi\highlight15\cf14\b (\highlight11\cf10\b0 "Saloia/GizonZaharra.txt"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 4\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preX\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getX\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab     \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preY\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getY\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 deletePertsonaiaMatrizetik\highlight15\cf14\b (\highlight17\cf16\b0 preX\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 preY\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight7\cf6\b0 3\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight7\cf6 3\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 setPertsonaiaMatrizean\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab     \tab \highlight17\cf16 saloia\highlight15\cf14\b .\highlight17\cf16\b0 eszenatokiaInprimatu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Kutxagogorrera hurbildu zara eta irekitzeko gako bat behar duela ikusten duzu..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 gakoa\highlight15\cf14\b =\highlight17\cf16\b0 zenbakiaLortu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight5\cf4 //String kontra=Integer.toString(gakoa);\par
+\highlight1\cf0 \tab \tab \tab \tab \highlight5\cf4 //if(kontra=="1830")\{\par
+\highlight1\cf0 \tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 gakoa\highlight15\cf14\b ==\highlight7\cf6\b0 1830\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 FitxeroakIrakurri\highlight15\cf14\b .\highlight17\cf16\b0 fitxeroaErakutsi\highlight15\cf14\b (\highlight11\cf10\b0 "Saloia/Kutxagogorra.txt"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 ListaAkzioa\highlight1\cf0  \highlight17\cf16 l\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight9\cf8\b new\highlight1\cf0\b0  \highlight17\cf16 ListaAkzioa\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 l\highlight15\cf14\b .\highlight17\cf16\b0 pasatuSaloitikHilerrira\highlight15\cf14\b ();\highlight1\cf0\b0  \highlight5\cf4 //hurrengo egoerara pasatuko da\par
+\highlight1\cf0 \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Kutxagogorra irekitzen saiatu zara baina ez da ezer gertatu..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 pEgoera\highlight15\cf14\b ==\highlight7\cf6\b0 2\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 1\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preX\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getX\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab     \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preY\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getY\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 hilerria\highlight15\cf14\b .\highlight17\cf16\b0 deletePertsonaiaMatrizetik\highlight15\cf14\b (\highlight17\cf16\b0 preX\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 preY\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight7\cf6\b0 8\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight7\cf6 2\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 hilerria\highlight15\cf14\b .\highlight17\cf16\b0 setPertsonaiaMatrizean\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 hilerria\highlight15\cf14\b .\highlight17\cf16\b0 eszenatokiaInprimatu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Ehorzlearengana hurbildu zara eta berarekin hitz egiten saiatu zara..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 FitxeroakIrakurri\highlight15\cf14\b .\highlight17\cf16\b0 fitxeroaErakutsi\highlight15\cf14\b (\highlight11\cf10\b0 "Hilerria/Ehorzlea.txt"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 2\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\par
+\tab \tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preX\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getX\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab     \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preY\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getY\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 hilerria\highlight15\cf14\b .\highlight17\cf16\b0 deletePertsonaiaMatrizetik\highlight15\cf14\b (\highlight17\cf16\b0 preX\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 preY\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight7\cf6\b0 7\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight7\cf6 15\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 hilerria\highlight15\cf14\b .\highlight17\cf16\b0 setPertsonaiaMatrizean\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 hilerria\highlight15\cf14\b .\highlight17\cf16\b0 eszenatokiaInprimatu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Apaizarengana hurbildu zara eta berarekin hitz egiten saiatu zara..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 FitxeroakIrakurri\highlight15\cf14\b .\highlight17\cf16\b0 fitxeroaErakutsi\highlight15\cf14\b (\highlight11\cf10\b0 "Hilerria/Apaiza.txt"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 giltza\highlight15\cf14\b =\highlight9\cf8 true\highlight15\cf14 ;\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 ListaAkzioa\highlight1\cf0  \highlight17\cf16 l\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight9\cf8\b new\highlight1\cf0\b0  \highlight17\cf16 ListaAkzioa\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 l\highlight15\cf14\b .\highlight17\cf16\b0 setElizaT\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 3\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\par
+\tab \tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preX\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getX\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab     \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 preY\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getY\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 hilerria\highlight15\cf14\b .\highlight17\cf16\b0 deletePertsonaiaMatrizetik\highlight15\cf14\b (\highlight17\cf16\b0 preX\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 preY\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight7\cf6\b0 7\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight7\cf6 12\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 hilerria\highlight15\cf14\b .\highlight17\cf16\b0 setPertsonaiaMatrizean\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 hilerria\highlight15\cf14\b .\highlight17\cf16\b0 eszenatokiaInprimatu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \par
+\tab \tab \tab \tab \highlight17\cf16 ListaAkzioa\highlight1\cf0  \highlight17\cf16 l\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight9\cf8\b new\highlight1\cf0\b0  \highlight17\cf16 ListaAkzioa\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 l\highlight15\cf14\b .\highlight17\cf16\b0 getEliza\highlight15\cf14\b ())\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 FitxeroakIrakurri\highlight15\cf14\b .\highlight17\cf16\b0 fitxeroaErakutsi\highlight15\cf14\b (\highlight11\cf10\b0 "Hilerria/Eliza_T.txt"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight5\cf4 //ListaEgoerak.getNireListaEgoerak().egoeraEguneratu(3); //hurrengo egoerara pasatuko da\par
+\highlight1\cf0 \tab \tab \tab \tab \tab \tab \tab \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 l\highlight15\cf14\b .\highlight17\cf16\b0 pasatuHilerritikBanketxera\highlight15\cf14\b ();\highlight1\cf0\b0  \highlight5\cf4 //hurrengo egoerara pasatuko da\par
+\highlight1\cf0 \tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 FitxeroakIrakurri\highlight15\cf14\b .\highlight17\cf16\b0 fitxeroaErakutsi\highlight15\cf14\b (\highlight11\cf10\b0 "Hilerria/Eliza_F.txt"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \tab \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 pEgoera\highlight15\cf14\b ==\highlight7\cf6\b0 3\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \par
+\tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 1\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 tiroEgin\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 2\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (!\highlight17\cf16\b0 objetuak1\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Lehen zenuen bizitza hurrengoa da:"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Bizitza: "\highlight15\cf14\b +\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getPv\highlight15\cf14\b ());\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 ""\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 objetuaErabili\highlight15\cf14\b (\highlight11\cf10\b0 "Pitia"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Pitia erabili duzu eta zure bizitza hurrengoa da:"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Bizitza berria: "\highlight15\cf14\b +\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getPv\highlight15\cf14\b ());\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 setObjetuak1\highlight15\cf14\b (\highlight9\cf8 true\highlight15\cf14 );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Pitia ez dago zure inbentarioan"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 3\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (!\highlight17\cf16\b0 objetuak2\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Lehen zenuen bizitza hurrengoa da:"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Bizitza: "\highlight15\cf14\b +\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getPv\highlight15\cf14\b ());\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 ""\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 objetuaErabili\highlight15\cf14\b (\highlight11\cf10\b0 "Kapela"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Kapela erabili duzu eta zure bizitza hurrengoa da:"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Bizitza berria: "\highlight15\cf14\b +\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getPv\highlight15\cf14\b ());\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 setObjetuak2\highlight15\cf14\b (\highlight9\cf8 true\highlight15\cf14 );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Kapela ez dago zure inbentarioan"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 4\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 kont\highlight15\cf14\b <=\highlight7\cf6\b0 1\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Lehen zenuen bizitza hurrengoa da:"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Bizitza: "\highlight15\cf14\b +\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getPv\highlight15\cf14\b ());\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 ""\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 objetuaErabili\highlight15\cf14\b (\highlight11\cf10\b0 "Likorea"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Likorea erabili duzu eta zure bizitza hurrengoa da:"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Bizitza berria: "\highlight15\cf14\b +\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getPv\highlight15\cf14\b ());\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 kont\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Likorea ez dago zure inbentarioan"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\par
+\tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b ==\highlight7\cf6\b0 5\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\par
+\tab \highlight19\cf18 private\highlight1\cf0  \highlight19\cf18 boolean\highlight1\cf0  \highlight17\cf16 dialogoaBurutu\highlight15\cf14\b ()\{\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 Boolean\highlight1\cf0  \highlight17\cf16 burutu\highlight15\cf14\b =\highlight9\cf8 false\highlight15\cf14 ;\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 Dadoa\highlight1\cf0  \highlight17\cf16 d\highlight15\cf14\b =\highlight9\cf8 new\highlight1\cf0\b0  \highlight17\cf16 Dadoa\highlight15\cf14\b (\highlight7\cf6\b0 6\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 d\highlight15\cf14\b .\highlight17\cf16\b0 bota\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight3\cf2 /*\par
+\tab \tab if(Protagonista.getNireProtagonista().getCar()+d.getGoikoAldea()>=6) \{\par
+\tab \tab \tab burutu=true;\par
+\tab \tab \}*/\highlight1\cf0 \par
+\tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 d\highlight15\cf14\b .\highlight17\cf16\b0 getGoikoAldea\highlight15\cf14\b ()>=\highlight7\cf6\b0 3\highlight15\cf14\b )\highlight1\cf0\b0  \highlight15\cf14\b \{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 burutu\highlight15\cf14\b =\highlight9\cf8 true\highlight15\cf14 ;\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b return\highlight1\cf0\b0  \highlight17\cf16 burutu\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 private\highlight1\cf0  \highlight19\cf18 void\highlight1\cf0  \highlight17\cf16 tiroEgin\highlight15\cf14\b ()\highlight1\cf0\b0  \highlight9\cf8\b throws\highlight1\cf0\b0  \highlight17\cf16 FileNotFoundException\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 IOException\highlight1\cf0  \highlight15\cf14\b \{\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 Protagonista\highlight1\cf0  \highlight17\cf16 p\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Protagonista\highlight15\cf14\b .\highlight17\cf16\b0 getNireProtagonista\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 erasoa\highlight15\cf14\b =\highlight17\cf16\b0 Protagonista\highlight15\cf14\b .\highlight17\cf16\b0 getNireProtagonista\highlight15\cf14\b ().\highlight17\cf16\b0 getAtaq\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 defentsa\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Protagonista\highlight15\cf14\b .\highlight17\cf16\b0 getNireProtagonista\highlight15\cf14\b ().\highlight17\cf16\b0 getDef\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 bizitza\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Protagonista\highlight15\cf14\b .\highlight17\cf16\b0 getNireProtagonista\highlight15\cf14\b ().\highlight17\cf16\b0 getPv\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 ListaEtsaiak\highlight1\cf0  \highlight17\cf16 l1\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Banketxea\highlight15\cf14\b .\highlight17\cf16\b0 getNireBanketxea\highlight15\cf14\b ().\highlight17\cf16\b0 lortuEtsaiakBanketxetik\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 ListaEtsaiak\highlight1\cf0  \highlight17\cf16 l2\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 berdinakDira\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 ListaEtsaiak\highlight1\cf0  \highlight17\cf16 l3\highlight15\cf14\b =\highlight17\cf16\b0 l2\highlight15\cf14\b .\highlight17\cf16\b0 etsaiaHildaBadagoKendu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 l3\highlight15\cf14\b .\highlight17\cf16\b0 luzera\highlight15\cf14\b ()!=\highlight7\cf6\b0 0\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Aukeratu ahal dituzun etsaiak hauek dira: "\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 l2\highlight15\cf14\b .\highlight17\cf16\b0 etsaiakInprimatu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Idatzi tirokatu nahi duzun etsaiaren letra"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 tiroketa\highlight15\cf14\b (\highlight17\cf16\b0 l2\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 l3\highlight15\cf14\b .\highlight17\cf16\b0 luzera\highlight15\cf14\b ()==\highlight7\cf6\b0 0\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Ezin duzu etsairik tirokatu momentu honetan. Egizu beste zeozer"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab     \tab \highlight17\cf16 ListaAkzioa\highlight1\cf0  \highlight17\cf16 listaAkz\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight9\cf8\b new\highlight1\cf0\b0  \highlight17\cf16 ListaAkzioa\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab     \tab \highlight17\cf16 ListaAkzioa\highlight1\cf0  \highlight17\cf16 listaAkzB\highlight15\cf14\b =\highlight17\cf16\b0 listaAkz\highlight15\cf14\b .\highlight17\cf16\b0 listaAkzioakSortu\highlight15\cf14\b (\highlight7\cf6\b0 3\highlight15\cf14\b );\highlight1\cf0\b0 \par
+    \tab \tab \highlight17\cf16 listaAkzB\highlight15\cf14\b .\highlight17\cf16\b0 akzioaAukeratuEtaBurutu\highlight15\cf14\b (\highlight7\cf6\b0 3\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight5\cf4 //l1.etsaienBizitzaInprimatu();\par
+\highlight1\cf0 \tab \tab \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \tab \par
+\tab \highlight19\cf18 private\highlight1\cf0  \highlight19\cf18 void\highlight1\cf0  \highlight17\cf16 tiroketa\highlight15\cf14\b (\highlight17\cf16\b0 ListaEtsaiak\highlight1\cf0  \highlight17\cf16 pL\highlight15\cf14\b )\{\highlight1\cf0\b0 \tab \par
+\tab \tab \highlight9\cf8\b try\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 String\highlight1\cf0  \highlight17\cf16 izena\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Teklatua\highlight15\cf14\b .\highlight17\cf16\b0 getNireTeklatua\highlight15\cf14\b ().\highlight17\cf16\b0 irakurriString\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 Etsaia\highlight1\cf0  \highlight17\cf16 e\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 pL\highlight15\cf14\b .\highlight17\cf16\b0 etsaiaBilatuIzenez\highlight15\cf14\b (\highlight17\cf16\b0 izena\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 pL\highlight15\cf14\b .\highlight17\cf16\b0 badago\highlight15\cf14\b (\highlight17\cf16\b0 e\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight5\cf4 //Ataque del protagonista al etsaia\par
+\highlight1\cf0 \tab \tab \tab \highlight17\cf16 e\highlight15\cf14\b .\highlight17\cf16\b0 setBizitza\highlight15\cf14\b (\highlight7\cf6\b0 0\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight17\cf16\b0 e\highlight15\cf14\b .\highlight17\cf16\b0 getIzena\highlight15\cf14\b ()\highlight1\cf0\b0  \highlight15\cf14\b +\highlight1\cf0\b0  \highlight11\cf10 " hilda dago"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b catch\highlight15\cf14 (\highlight17\cf16\b0 BalioEzEgokia\highlight1\cf0  \highlight17\cf16 lag\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Gaizki sartu duzu etsaiaren izena, sartu berriz..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 tiroketa\highlight15\cf14\b (\highlight17\cf16\b0 pL\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \par
+\tab \highlight19\cf18 public\highlight1\cf0  \highlight19\cf18 void\highlight1\cf0  \highlight17\cf16 akzioaInprimatu\highlight15\cf14\b ()\{\highlight1\cf0\b0 \par
+\tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight9\cf8 this\highlight15\cf14 .\highlight17\cf16\b0 izena\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \highlight19\cf18 public\highlight1\cf0  \highlight19\cf18 void\highlight1\cf0  \highlight17\cf16 setIdent\highlight15\cf14\b (\highlight19\cf18\b0 int\highlight1\cf0  \highlight17\cf16 pIdentitatea\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 ident\highlight15\cf14\b =\highlight17\cf16\b0 pIdentitatea\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \par
+\tab \highlight19\cf18 public\highlight1\cf0  \highlight19\cf18 void\highlight1\cf0  \highlight17\cf16 mugitu\highlight15\cf14\b ()\{\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b try\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 ListaAkzioa\highlight1\cf0  \highlight17\cf16 l\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight9\cf8\b new\highlight1\cf0\b0  \highlight17\cf16 ListaAkzioa\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 l\highlight15\cf14\b .\highlight17\cf16\b0 setMugitu\highlight15\cf14\b (\highlight9\cf8 true\highlight15\cf14 );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 l\highlight15\cf14\b .\highlight17\cf16\b0 setMugitu1\highlight15\cf14\b (\highlight9\cf8 true\highlight15\cf14 );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 lag\highlight15\cf14\b =\highlight17\cf16\b0 noranzkoaLortu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 Protagonista\highlight1\cf0  \highlight17\cf16 p\highlight15\cf14\b =\highlight17\cf16\b0 Protagonista\highlight15\cf14\b .\highlight17\cf16\b0 getNireProtagonista\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 Banketxea\highlight1\cf0  \highlight17\cf16 banketxea\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 Banketxea\highlight15\cf14\b .\highlight17\cf16\b0 getNireBanketxea\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 x\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getX\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 y\highlight15\cf14\b =\highlight17\cf16\b0 p\highlight15\cf14\b .\highlight17\cf16\b0 getY\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 lag\highlight15\cf14\b ==\highlight7\cf6\b0 1\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 y\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b <=\highlight7\cf6\b0 18\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 y\highlight15\cf14\b ==\highlight7\cf6\b0 17\highlight15\cf14\b )\highlight1\cf0\b0  \highlight15\cf14\b \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Sartu duzun balioa ez da egokia..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 '%'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 '@'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Ezin zara hortik pasa..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'A'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'B'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'C'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'D'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'E'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'F'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'G'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Ezin zara etsai baten gainean kokatu..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 lag\highlight15\cf14\b ==\highlight7\cf6\b0 2\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 y\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b >=\highlight7\cf6\b0 1\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 y\highlight15\cf14\b ==\highlight7\cf6\b0 2\highlight15\cf14\b )\highlight1\cf0\b0  \highlight15\cf14\b \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Sartu duzun balioa ez da egokia..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 '%'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 '@'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Ezin zara hortik pasa..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'A'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'B'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'C'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'D'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'E'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'F'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b )==\highlight13\cf12\b0 'G'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Ezin zara etsai baten gainean kokatu..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 lag\highlight15\cf14\b ==\highlight7\cf6\b0 3\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 x\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b >=\highlight7\cf6\b0 1\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 x\highlight15\cf14\b ==\highlight7\cf6\b0 2\highlight15\cf14\b )\highlight1\cf0\b0  \highlight15\cf14\b \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Sartu duzun balioa ez da egokia..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 '%'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 '@'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Ezin zara hortik pasa..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'A'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'B'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'C'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'D'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'E'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'F'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'G'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Ezin zara etsai baten gainean kokatu..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b -\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 x\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b <=\highlight7\cf6\b0 18\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 (\highlight17\cf16\b0 x\highlight15\cf14\b ==\highlight7\cf6\b0 17\highlight15\cf14\b )\highlight1\cf0\b0  \highlight15\cf14\b \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Sartu duzun balioa ez da egokia..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 '%'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 '@'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Ezin zara hortik pasa..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'A'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'B'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'C'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'D'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'E'\highlight15\cf14\b )||(\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'F'\highlight15\cf14\b )||\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b (\highlight17\cf16\b0 banketxea\highlight15\cf14\b .\highlight17\cf16\b0 matrizekoBalioa\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight1\cf0\b0  \highlight17\cf16 y\highlight15\cf14\b )==\highlight13\cf12\b0 'G'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Ezin zara etsai baten gainean kokatu..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Berriro galdetuko dizut, norantz nahi duzu mugitu?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> W < gorantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> A < ezkerrerantz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> S < beherentzat joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "> D < eskuineranz joateko"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 mugitu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight17\cf16 p\highlight15\cf14\b .\highlight17\cf16\b0 posizioazAldatu\highlight15\cf14\b (\highlight17\cf16\b0 x\highlight15\cf14\b +\highlight7\cf6\b0 1\highlight15\cf14\b ,\highlight17\cf16\b0 y\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b catch\highlight15\cf14 (\highlight17\cf16\b0 BalioEzEgokia\highlight1\cf0  \highlight17\cf16 lag\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Sartu duzun balioa ez da egokia..."\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \par
+\tab \highlight19\cf18 private\highlight1\cf0  \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 zenbakiaLortu\highlight15\cf14\b ()\{\highlight1\cf0\b0 \par
+\tab \tab \highlight19\cf18 boolean\highlight1\cf0  \highlight17\cf16 lortuta\highlight15\cf14\b =\highlight9\cf8 false\highlight15\cf14 ;\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b try\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 lag\highlight15\cf14\b =\highlight17\cf16\b0 Teklatua\highlight15\cf14\b .\highlight17\cf16\b0 getNireTeklatua\highlight15\cf14\b ().\highlight17\cf16\b0 irakurriZenb\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 lortuta\highlight15\cf14\b =\highlight9\cf8 true\highlight15\cf14 ;\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b return\highlight1\cf0\b0  \highlight17\cf16 lag\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b catch\highlight15\cf14 (\highlight17\cf16\b0 NumberFormatException\highlight1\cf0  \highlight17\cf16 lag\highlight15\cf14\b )\{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 System\highlight15\cf14\b .\highlight17\cf16\b0 out\highlight15\cf14\b .\highlight17\cf16\b0 println\highlight15\cf14\b (\highlight11\cf10\b0 "Benetan badakizu zenbakiak nola diren?"\highlight15\cf14\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b return\highlight1\cf0\b0  \highlight9\cf8\b this\highlight15\cf14 .\highlight17\cf16\b0 zenbakiaLortu\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \par
+\par
+\tab \par
+\tab \highlight19\cf18 private\highlight1\cf0  \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 noranzkoaLortu\highlight15\cf14\b ()\highlight1\cf0\b0  \highlight9\cf8\b throws\highlight1\cf0\b0  \highlight17\cf16 BalioEzEgokia\highlight15\cf14\b \{\highlight1\cf0\b0 \par
+\tab \tab \highlight19\cf18 char\highlight1\cf0  \highlight17\cf16 lag\highlight15\cf14\b =\highlight17\cf16\b0 Teklatua\highlight15\cf14\b .\highlight17\cf16\b0 getNireTeklatua\highlight15\cf14\b ().\highlight17\cf16\b0 irakurriChar\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \highlight19\cf18 int\highlight1\cf0  \highlight17\cf16 emaitza\highlight15\cf14\b =\highlight7\cf6\b0 0\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 lag\highlight15\cf14\b ==\highlight13\cf12\b0 'D'\highlight15\cf14\b )||(\highlight17\cf16\b0 lag\highlight15\cf14\b ==\highlight13\cf12\b0 'd'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight17\cf16 emaitza\highlight15\cf14\b =\highlight7\cf6\b0 1\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 lag\highlight15\cf14\b ==\highlight13\cf12\b0 'A'\highlight15\cf14\b )||(\highlight17\cf16\b0 lag\highlight15\cf14\b ==\highlight13\cf12\b0 'a'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight17\cf16 emaitza\highlight15\cf14\b =\highlight7\cf6\b0 2\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 lag\highlight15\cf14\b ==\highlight13\cf12\b0 'W'\highlight15\cf14\b )||(\highlight17\cf16\b0 lag\highlight15\cf14\b ==\highlight13\cf12\b0 'w'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight17\cf16 emaitza\highlight15\cf14\b =\highlight7\cf6\b0 3\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight9\cf8\b else\highlight15\cf14 \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b if\highlight15\cf14 ((\highlight17\cf16\b0 lag\highlight15\cf14\b ==\highlight13\cf12\b0 'S'\highlight15\cf14\b )||(\highlight17\cf16\b0 lag\highlight15\cf14\b ==\highlight13\cf12\b0 's'\highlight15\cf14\b ))\{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight17\cf16 emaitza\highlight15\cf14\b =\highlight7\cf6\b0 4\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight9\cf8\b else\highlight1\cf0\b0  \highlight15\cf14\b \{\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \tab \highlight9\cf8\b throw\highlight1\cf0\b0  \highlight9\cf8\b new\highlight1\cf0\b0  \highlight17\cf16 BalioEzEgokia\highlight15\cf14\b ();\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\tab \tab \highlight9\cf8\b return\highlight1\cf0\b0  \highlight17\cf16 emaitza\highlight15\cf14\b ;\highlight1\cf0\b0 \par
+\tab \highlight15\cf14\b \}\highlight1\cf0\b0 \par
+\highlight15\cf14\b \}\highlight1\cf0\b0 \par
+}

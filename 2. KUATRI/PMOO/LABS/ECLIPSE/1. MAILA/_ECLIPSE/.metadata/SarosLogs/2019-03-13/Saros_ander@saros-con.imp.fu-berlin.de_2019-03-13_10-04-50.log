@@ -1,0 +1,30 @@
+INFO  2019-03-13 10:04:35,458 (Saros.java:220) Starting Saros 14.10.31 running:
+  Java Version: 1.8.0_201
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.12.0.v20160606-1342
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  2019-03-13 10:04:35,500 (SarosContext.java:153) creating Saros runtime context...
+DEBUG 2019-03-13 10:04:35,550 (XMPPAccountStore.java:117) loading accounts from file: C:\Users\ANDER\.saros\config.dat
+DEBUG 2019-03-13 10:04:35,985 (XMPPAccountStore.java:176) loaded 1 account(s)
+INFO  2019-03-13 10:04:36,211 (SarosContext.java:199) successfully created Saros runtime context
+DEBUG 2019-03-13 10:04:36,243 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+INFO  2019-03-13 10:04:36,276 (PreferenceInitializer.java:50) initializing preference default values
+DEBUG 2019-03-13 10:04:36,328 (SarosAnnotation.java:117) resetting annotation colors
+DEBUG 2019-03-13 10:04:36,338 (Saros.java:430) skipping conversion of old XMPP accounts, because there are already new ones
+DEBUG 2019-03-13 10:04:46,284 (WhiteboardManager.java:194) WhiteboardManager instantiated
+DEBUG 2019-03-13 10:04:46,350 (DocumentRecord.java:93) Added Node: attr(155246788633539904) name=svg
+DEBUG 2019-03-13 10:04:46,521 (XMPPConnectionService.java:439) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2019-03-13 10:04:47,793 (XMPPConnectionService.java:459) using autodetected addresses: [10.109.209.212, fe80:0:0:0:708f:1a65:98e3:a1df%wlan0]
+DEBUG 2019-03-13 10:04:47,802 (XMPPConnectionService.java:398)  new connection state == CONNECTING
+DEBUG 2019-03-13 10:04:50,548 (XMPPConnectionService.java:398) ander@saros-con.imp.fu-berlin.de/Saros new connection state == CONNECTED
+DEBUG 2019-03-13 10:04:50,549 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+DEBUG 2019-03-13 10:04:50,556 (SkypeManager.java:289) Refreshing Skype username cache...
+WARN  2019-03-13 10:04:58,094 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /10.109.209.212:0
+WARN  2019-03-13 10:07:08,090 (AddContactWizard.java:237) Problem while adding a contact. User decided to add contact anyway. Problem:
+service-unavailable(503)
+DEBUG 2019-03-13 10:40:12,726 (SubscriptionHandler.java:152) contact subscribed to us: adei@saros-con.imp.fu-berlin.de
+DEBUG 2019-03-13 10:40:12,815 (SubscriptionHandler.java:160) contact requests to subscribe to us: adei@saros-con.imp.fu-berlin.de
+DEBUG 2019-03-13 10:40:25,879 (XMPPConnectionService.java:398) ander@saros-con.imp.fu-berlin.de/Saros new connection state == DISCONNECTING
+DEBUG 2019-03-13 10:40:26,040 (XMPPConnectionService.java:398)  new connection state == NOT_CONNECTED
+DEBUG 2019-03-13 10:40:26,042 (UPnPServiceImpl.java:295) deleting existing port mappings

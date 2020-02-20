@@ -1,0 +1,59 @@
+INFO  2019-04-03 08:46:20,363 (Saros.java:220) Starting Saros 14.10.31 running:
+  Java Version: 1.8.0_201
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.12.0.v20160606-1342
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  2019-04-03 08:46:20,423 (SarosContext.java:153) creating Saros runtime context...
+DEBUG 2019-04-03 08:46:20,459 (XMPPAccountStore.java:117) loading accounts from file: C:\Users\ANDER\.saros\config.dat
+DEBUG 2019-04-03 08:46:20,856 (XMPPAccountStore.java:176) loaded 1 account(s)
+INFO  2019-04-03 08:46:21,103 (SarosContext.java:199) successfully created Saros runtime context
+DEBUG 2019-04-03 08:46:21,134 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+INFO  2019-04-03 08:46:21,157 (PreferenceInitializer.java:50) initializing preference default values
+DEBUG 2019-04-03 08:46:21,228 (SarosAnnotation.java:117) resetting annotation colors
+DEBUG 2019-04-03 08:46:21,237 (Saros.java:430) skipping conversion of old XMPP accounts, because there are already new ones
+DEBUG 2019-04-03 08:46:28,920 (SharedDocumentProvider.java:77) SharedDocumentProvider created by Eclipse
+DEBUG 2019-04-03 08:46:37,329 (WhiteboardManager.java:194) WhiteboardManager instantiated
+DEBUG 2019-04-03 08:46:37,484 (DocumentRecord.java:93) Added Node: attr(155427759746481877) name=svg
+DEBUG 2019-04-03 08:46:37,813 (XMPPConnectionService.java:439) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2019-04-03 08:46:39,423 (XMPPConnectionService.java:459) using autodetected addresses: [10.109.209.212, fe80:0:0:0:708f:1a65:98e3:a1df%wlan0]
+DEBUG 2019-04-03 08:46:39,445 (XMPPConnectionService.java:398)  new connection state == CONNECTING
+DEBUG 2019-04-03 08:46:41,614 (XMPPConnectionService.java:398) ander@saros-con.imp.fu-berlin.de/Saros new connection state == CONNECTED
+DEBUG 2019-04-03 08:46:41,620 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+DEBUG 2019-04-03 08:46:41,643 (SkypeManager.java:289) Refreshing Skype username cache...
+WARN  2019-04-03 08:46:49,785 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /10.109.209.212:0
+DEBUG 2019-04-03 08:50:40,394 (XMPPConnectionService.java:398) ander@saros-con.imp.fu-berlin.de/Saros new connection state == DISCONNECTING
+WARN  2019-04-03 08:50:40,396 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.serviceProviders.SarosSourceProvider$3@713687fd, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.serviceProviders.SarosSourceProvider.connectionChanged(SarosSourceProvider.java:124)
+	at de.fu_berlin.inf.dpp.serviceProviders.SarosSourceProvider.access$0(SarosSourceProvider.java:123)
+	at de.fu_berlin.inf.dpp.serviceProviders.SarosSourceProvider$1.connectionStateChanged(SarosSourceProvider.java:70)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler.setConnectionState(ConnectionHandler.java:397)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler.access$1(ConnectionHandler.java:389)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler$1.connectionStateChanged(ConnectionHandler.java:79)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService.setConnectionState(XMPPConnectionService.java:405)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService.disconnect(XMPPConnectionService.java:304)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler.disconnectXMPPInternal(ConnectionHandler.java:225)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler.disconnect(ConnectionHandler.java:211)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:304)
+	at de.fu_berlin.inf.dpp.util.ThreadUtils$1.run(ThreadUtils.java:38)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2019-04-03 08:50:40,564 (XMPPConnectionService.java:398)  new connection state == NOT_CONNECTED
+WARN  2019-04-03 08:50:40,566 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.serviceProviders.SarosSourceProvider$3@798a8820, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.serviceProviders.SarosSourceProvider.connectionChanged(SarosSourceProvider.java:124)
+	at de.fu_berlin.inf.dpp.serviceProviders.SarosSourceProvider.access$0(SarosSourceProvider.java:123)
+	at de.fu_berlin.inf.dpp.serviceProviders.SarosSourceProvider$1.connectionStateChanged(SarosSourceProvider.java:70)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler.setConnectionState(ConnectionHandler.java:397)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler.access$1(ConnectionHandler.java:389)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler$1.connectionStateChanged(ConnectionHandler.java:79)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService.setConnectionState(XMPPConnectionService.java:405)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService.disconnect(XMPPConnectionService.java:308)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler.disconnectXMPPInternal(ConnectionHandler.java:225)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler.disconnect(ConnectionHandler.java:211)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:304)
+	at de.fu_berlin.inf.dpp.util.ThreadUtils$1.run(ThreadUtils.java:38)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2019-04-03 08:50:40,573 (UPnPServiceImpl.java:295) deleting existing port mappings

@@ -1,0 +1,191 @@
+package org.pmoo;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class PertsonaTest {
+
+	Pertsona pEtEOn, pEtBAn, pUsaEOp, pUsaBAp, pSerBBn, pSerEABn, pAusEABp, pAusBBp;
+	
+	@Before
+	public void setUp() throws Exception {
+		//String pIzena, int pAdina, int pId, char pSexua, 
+		// , String pNazionalitatea, String pOdolMota
+		pEtEOn= new Pertsona("Jon Paul Alima", 13, 1 , 'g', "Etiopia", "O-");
+		pEtBAn= new Pertsona("George Alima", 16, 2 , 'g', "Etiopia", "A-");
+		pUsaEOp= new Pertsona("James Jones", 15, 3 , 'g', "Estatu Batuak", "O+");
+		pUsaBAp= new Pertsona("Alisha Damm", 18, 4 , 'e', "Estatu Batuak", "A+");
+		pSerBBn= new Pertsona("Nikola Jokic", 21, 5 , 'g', "Serbia", "B-");
+		pSerEABn= new Pertsona("Ante Zizica", 16, 6 , 'e', "Serbia", "AB-");
+		pAusEABp= new Pertsona("Doreen James", 12, 7 , 'e', "Australia", "AB+");
+		pAusBBp= new Pertsona("Casey Stoner", 40, 8 , 'g', "Australia", "B+");
+	}
+	//atributuak
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testPertsona() {
+		assertNotNull(pEtEOn);
+		assertNotNull(pEtBAn);
+	}
+
+	@Test
+	public void testIdBerdinaDu() {
+		assertFalse(pEtEOn.idBerdinaDu(pEtBAn));
+	}
+
+	@Test
+	public void testGidatuDezake() {
+		assertTrue(pEtBAn.gidatuDezake());
+		assertFalse(pEtEOn.gidatuDezake());
+
+		assertTrue(pUsaBAp.gidatuDezake());
+		assertFalse(pUsaEOp.gidatuDezake());
+
+		assertTrue(pSerBBn.gidatuDezake());
+		assertFalse(pSerEABn.gidatuDezake());
+
+		assertTrue(pAusBBp.gidatuDezake());
+		assertFalse(pAusEABp.gidatuDezake());
+	}
+
+	@Test
+	public void testOdolaEmanDiezaioke() {
+			
+		/*AB+ gaizki
+		assertTrue(pAusEABp.odolaEmanDiezaioke(pAusEABp));
+		assertTrue(pAusEABp.odolaEmanDiezaioke(pSerEABn));
+		assertTrue(pAusEABp.odolaEmanDiezaioke(pUsaBAp));
+		assertTrue(pAusEABp.odolaEmanDiezaioke(pEtBAn));
+		assertTrue(pAusEABp.odolaEmanDiezaioke(pAusBBp));
+		assertTrue(pAusEABp.odolaEmanDiezaioke(pSerBBn));
+		assertTrue(pAusEABp.odolaEmanDiezaioke(pUsaEOp));
+		assertTrue(pAusEABp.odolaEmanDiezaioke(pEtEOn));*/
+		
+		//AB+
+		assertTrue(pEtEOn.odolaEmanDiezaioke(pAusEABp));
+		assertTrue(pUsaEOp.odolaEmanDiezaioke(pAusEABp));
+		assertTrue(pSerBBn.odolaEmanDiezaioke(pAusEABp));
+		assertTrue(pEtBAn.odolaEmanDiezaioke(pAusEABp));
+		assertTrue(pAusBBp.odolaEmanDiezaioke(pAusEABp));
+		assertTrue(pUsaBAp.odolaEmanDiezaioke(pAusEABp));
+		assertTrue(pSerEABn.odolaEmanDiezaioke(pAusEABp));
+		assertTrue(pAusEABp.odolaEmanDiezaioke(pAusEABp));	
+
+		//AB-
+		assertTrue(pEtEOn.odolaEmanDiezaioke(pSerEABn));
+		assertFalse(pUsaEOp.odolaEmanDiezaioke(pSerEABn));
+		assertTrue(pSerBBn.odolaEmanDiezaioke(pSerEABn));
+		assertTrue(pEtBAn.odolaEmanDiezaioke(pSerEABn));
+		assertFalse(pAusBBp.odolaEmanDiezaioke(pSerEABn));
+		assertFalse(pUsaBAp.odolaEmanDiezaioke(pSerEABn));
+		assertTrue(pSerEABn.odolaEmanDiezaioke(pSerEABn));
+		assertFalse(pAusEABp.odolaEmanDiezaioke(pSerEABn));
+		
+		//A+
+		assertTrue(pEtEOn.odolaEmanDiezaioke(pUsaBAp));
+		//assertTrue(pUsaEOp.odolaEmanDiezaioke(pUsaBAp));
+		assertFalse(pSerBBn.odolaEmanDiezaioke(pUsaBAp));
+		assertTrue(pEtBAn.odolaEmanDiezaioke(pUsaBAp));
+		assertFalse(pAusBBp.odolaEmanDiezaioke(pUsaBAp));
+		assertTrue(pUsaBAp.odolaEmanDiezaioke(pUsaBAp));
+		assertFalse(pSerEABn.odolaEmanDiezaioke(pUsaBAp));
+		assertFalse(pAusEABp.odolaEmanDiezaioke(pUsaBAp));
+				
+		//A-
+		assertTrue(pEtEOn.odolaEmanDiezaioke(pEtBAn));
+		assertFalse(pUsaEOp.odolaEmanDiezaioke(pEtBAn));
+		assertFalse(pSerBBn.odolaEmanDiezaioke(pEtBAn));
+		assertTrue(pEtBAn.odolaEmanDiezaioke(pEtBAn));
+		assertFalse(pAusBBp.odolaEmanDiezaioke(pEtBAn));
+		assertFalse(pUsaBAp.odolaEmanDiezaioke(pEtBAn));
+		assertFalse(pSerEABn.odolaEmanDiezaioke(pEtBAn));
+		assertFalse(pAusEABp.odolaEmanDiezaioke(pEtBAn));
+		
+		//B+
+		assertTrue(pEtEOn.odolaEmanDiezaioke(pAusBBp));
+		assertTrue(pUsaEOp.odolaEmanDiezaioke(pAusBBp));
+		assertTrue(pSerBBn.odolaEmanDiezaioke(pAusBBp));
+		assertFalse(pEtBAn.odolaEmanDiezaioke(pAusBBp));
+		assertTrue(pAusBBp.odolaEmanDiezaioke(pAusBBp));
+		assertFalse(pUsaBAp.odolaEmanDiezaioke(pAusBBp));
+		assertFalse(pSerEABn.odolaEmanDiezaioke(pAusBBp));
+		assertFalse(pAusEABp.odolaEmanDiezaioke(pAusBBp));
+				
+		//B-
+		assertTrue(pEtEOn.odolaEmanDiezaioke(pSerBBn));
+		assertFalse(pUsaEOp.odolaEmanDiezaioke(pSerBBn));
+		assertTrue(pSerBBn.odolaEmanDiezaioke(pSerBBn));
+		assertFalse(pEtBAn.odolaEmanDiezaioke(pSerBBn));
+		assertFalse(pAusBBp.odolaEmanDiezaioke(pSerBBn));
+		assertFalse(pUsaBAp.odolaEmanDiezaioke(pSerBBn));
+		assertFalse(pSerEABn.odolaEmanDiezaioke(pSerBBn));
+		assertFalse(pAusEABp.odolaEmanDiezaioke(pSerBBn));
+		
+		//O+
+		assertTrue(pEtEOn.odolaEmanDiezaioke(pUsaEOp));
+		assertTrue(pUsaEOp.odolaEmanDiezaioke(pUsaEOp));
+		assertFalse(pSerBBn.odolaEmanDiezaioke(pUsaEOp));
+		assertFalse(pEtBAn.odolaEmanDiezaioke(pUsaEOp));
+		assertFalse(pAusBBp.odolaEmanDiezaioke(pUsaEOp));
+		assertFalse(pUsaBAp.odolaEmanDiezaioke(pUsaEOp));
+		assertFalse(pSerEABn.odolaEmanDiezaioke(pUsaEOp));
+		assertFalse(pAusEABp.odolaEmanDiezaioke(pUsaEOp));
+				
+		//O-
+		assertTrue(pEtEOn.odolaEmanDiezaioke(pEtEOn));
+		assertFalse(pUsaEOp.odolaEmanDiezaioke(pEtEOn));
+		assertFalse(pSerBBn.odolaEmanDiezaioke(pEtEOn));
+		assertFalse(pEtBAn.odolaEmanDiezaioke(pEtEOn));
+		assertFalse(pAusBBp.odolaEmanDiezaioke(pEtEOn));
+		assertFalse(pUsaBAp.odolaEmanDiezaioke(pEtEOn));
+		assertFalse(pSerEABn.odolaEmanDiezaioke(pEtEOn));
+		assertFalse(pAusEABp.odolaEmanDiezaioke(pEtEOn));
+		
+		/*/AB+
+		assert(pEtEOn.odolaEmanDiezaioke());
+		assert(pUsaEOp.odolaEmanDiezaioke(
+		assert(pSerBBn.odolaEmanDiezaioke(
+		assert(pEtBAn.odolaEmanDiezaioke(
+		assert(pAusBBp.odolaEmanDiezaioke(
+		assert(pUsaBAp.odolaEmanDiezaioke(
+		assert(pSerEABn.odolaEmanDiezaioke(
+		assert(pAusEABp.odolaEmanDiezaioke(		*/
+
+
+	
+	//assert(emaile.odolaEmanDiezaioke(ahhrtzaile));
+		
+		
+		/*
+		assert(.odolaEmanDiezaioke());
+		assert(.odolaEmanDiezaioke());
+		assert(.odolaEmanDiezaioke());
+		assert(.odolaEmanDiezaioke());
+		assert(.odolaEmanDiezaioke());
+		assert(.odolaEmanDiezaioke());
+		assert(.odolaEmanDiezaioke());
+		assert(.odolaEmanDiezaioke());
+		*/
+	}
+
+	@Test
+	public void testGetIzenarenIniziala() {
+		assertNotNull(pEtEOn.getIzenarenIniziala());
+	}
+
+	/*@Test
+	public void testGetAbizenarenIniziala() {
+		fail("Not yet implemented");
+	}*/
+
+	//eraikitzaileak
+
+	//gainontzeko metodoak
+}

@@ -1,0 +1,244 @@
+INFO  2019-03-13 10:52:29,171 (Saros.java:220) Starting Saros 14.10.31 running:
+  Java Version: 1.8.0_201
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.12.0.v20160606-1342
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  2019-03-13 10:52:29,213 (SarosContext.java:153) creating Saros runtime context...
+DEBUG 2019-03-13 10:52:29,260 (XMPPAccountStore.java:117) loading accounts from file: C:\Users\ANDER\.saros\config.dat
+DEBUG 2019-03-13 10:52:29,603 (XMPPAccountStore.java:176) loaded 1 account(s)
+INFO  2019-03-13 10:52:29,803 (SarosContext.java:199) successfully created Saros runtime context
+DEBUG 2019-03-13 10:52:29,840 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+INFO  2019-03-13 10:52:29,864 (PreferenceInitializer.java:50) initializing preference default values
+DEBUG 2019-03-13 10:52:29,922 (SarosAnnotation.java:117) resetting annotation colors
+DEBUG 2019-03-13 10:52:29,922 (Saros.java:430) skipping conversion of old XMPP accounts, because there are already new ones
+DEBUG 2019-03-13 10:52:34,901 (SharedDocumentProvider.java:77) SharedDocumentProvider created by Eclipse
+DEBUG 2019-03-13 10:52:41,293 (WhiteboardManager.java:194) WhiteboardManager instantiated
+DEBUG 2019-03-13 10:52:41,343 (DocumentRecord.java:93) Added Node: attr(155247076133745935) name=svg
+DEBUG 2019-03-13 10:52:41,570 (XMPPConnectionService.java:439) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2019-03-13 10:52:43,193 (XMPPConnectionService.java:459) using autodetected addresses: [10.109.209.212, fe80:0:0:0:708f:1a65:98e3:a1df%wlan0]
+DEBUG 2019-03-13 10:52:43,203 (XMPPConnectionService.java:398)  new connection state == CONNECTING
+DEBUG 2019-03-13 10:52:44,710 (XMPPConnectionService.java:398) ander@saros-con.imp.fu-berlin.de/Saros new connection state == CONNECTED
+DEBUG 2019-03-13 10:52:44,710 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+DEBUG 2019-03-13 10:52:44,716 (SkypeManager.java:289) Refreshing Skype username cache...
+DEBUG 2019-03-13 10:52:52,914 (DiscoveryManager.java:382) Inserted DiscoveryInfo into Cache for: adei@saros-con.imp.fu-berlin.de/Saros
+WARN  2019-03-13 10:52:53,530 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /10.109.209.212:0
+DEBUG 2019-03-13 10:53:08,702 (BaseResourceSelectionComposite.java:174) I got the names from the list: 0
+DEBUG 2019-03-13 10:53:08,999 (BaseResourceSelectionComposite.java:150) Remembered checked/grayed items: 0/0 Saved 1 snapshots
+DEBUG 2019-03-13 10:53:12,859 (BaseResourceSelectionComposite.java:150) Remembered checked/grayed items: 11/0 Saved 2 snapshots
+DEBUG 2019-03-13 10:53:18,189 (BaseResourceSelectionComposite.java:150) Remembered checked/grayed items: 11/0 Saved 2 snapshots
+DEBUG 2019-03-13 10:53:21,920 (BaseResourceSelectionComposite.java:272) Storing checked elements (not grayed): /adei**#**/adei/.settings**#**/adei/.settings/org.eclipse.jdt.core.prefs**#**/adei/bin**#**/adei/bin/adei**#**/adei/bin/adei/gfg.class**#**/adei/src**#**/adei/src/adei**#**/adei/src/adei/gfg.java**#**/adei/.classpath**#**/adei/.project**#**
+DEBUG 2019-03-13 10:53:21,921 (BaseResourceSelectionComposite.java:184) Remembering new selection name: -Last selection-
+DEBUG 2019-03-13 10:53:21,922 (BaseResourceSelectionComposite.java:174) I got the names from the list: 0
+DEBUG 2019-03-13 10:53:21,922 (BaseResourceSelectionComposite.java:200) Storing namesString: -Last selection-**#**
+INFO  2019-03-13 10:53:22,022 (StatisticManager.java:184) Current feedback settings:
+  Feedback disabled: false
+  Feedback interval: 5
+  Statistic submission allowed: false
+  Pseudonym submission allowed: false
+INFO  2019-03-13 10:53:22,050 (ErrorLogManager.java:257) Current error log settings:
+  Error log submission allowed: false
+  Full Error log submission allowed: false
+INFO  2019-03-13 10:53:22,452 (StatisticManager.java:163) Session count: 2
+INFO  2019-03-13 10:53:22,455 (ParticipantCollector.java:134) Session started: Current number of participants: 1
+DEBUG 2019-03-13 10:53:22,459 (ActivityHandler.java:89) activity dispatcher started
+DEBUG 2019-03-13 10:53:22,462 (XStreamExtensionProvider.java:149) Registering new converter of class de.fu_berlin.inf.dpp.misc.xstream.SPathConverter
+DEBUG 2019-03-13 10:53:22,464 (XStreamExtensionProvider.java:194) Registering new converter of class de.fu_berlin.inf.dpp.misc.xstream.UserConverter
+DEBUG 2019-03-13 10:53:22,636 (MultiUserChatService.java:100) Joining MUC...
+DEBUG 2019-03-13 10:53:22,643 (MultiUserChat.java:264) Trying to create room on server conference.saros-con.imp.fu-berlin.de
+DEBUG 2019-03-13 10:53:22,657 (WhiteboardManager.java:104) Skip Whiteboard preparation because session host has no Whiteboard
+DEBUG 2019-03-13 10:53:22,660 (ConsistencyAction.java:173) Inconsistency indicator goes: off
+DEBUG 2019-03-13 10:53:22,661 (SarosProjectMapper.java:179) added project de.fu_berlin.inf.dpp.filesystem.EclipseProjectImpl@2d9e7c1 - P/adei with ID 1556260917 [completely shared:true]
+DEBUG 2019-03-13 10:53:22,743 (MultiUserChat.java:310) Configuring room
+DEBUG 2019-03-13 10:53:22,765 (EditorManager.java:392) gfg.java
+DEBUG 2019-03-13 10:53:22,778 (SharedProjectDecorator.java:99) updating project decoration for all shared projects
+INFO  2019-03-13 10:53:22,781 (SarosSessionManager.java:262) session started
+DEBUG 2019-03-13 10:53:22,794 (OutgoingSessionNegotiation.java:122) OSN [remote side: adei@saros-con.imp.fu-berlin.de] : starting invitation
+DEBUG 2019-03-13 10:53:22,798 (OutgoingSessionNegotiation.java:223) OSN [remote side: adei@saros-con.imp.fu-berlin.de] : checking Saros support
+DEBUG 2019-03-13 10:53:22,799 (OutgoingSessionNegotiation.java:235) OSN [remote side: adei@saros-con.imp.fu-berlin.de] :  remote contact offers Saros support
+DEBUG 2019-03-13 10:53:22,800 (OutgoingSessionNegotiation.java:253) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : checking version compatibility
+DEBUG 2019-03-13 10:53:23,169 (OutgoingSessionNegotiation.java:284) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : Saros versions are compatible
+DEBUG 2019-03-13 10:53:23,170 (OutgoingSessionNegotiation.java:298) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : sending invitation
+DEBUG 2019-03-13 10:53:23,172 (OutgoingSessionNegotiation.java:314) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : waiting for invitation acknowledgement
+DEBUG 2019-03-13 10:53:23,211 (MultiUserChat.java:297) MUC created and joined. Server: conference.saros-con.imp.fu-berlin.de Room: SAROS_1470322495 Password 164983978
+DEBUG 2019-03-13 10:53:24,147 (MultiUserChat.java:133) processPacket called
+DEBUG 2019-03-13 10:53:24,149 (MultiUserChatStateManager.java:101) Incoming Message from saros_1470322495@conference.saros-con.imp.fu-berlin.de/ander@saros-con.imp.fu-berlin.de/Saros with state: active
+DEBUG 2019-03-13 10:53:24,149 (MultiUserChat.java:79) stateChanged fired with state: active
+DEBUG 2019-03-13 10:53:24,158 (OutgoingSessionNegotiation.java:325) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : invitation acknowledged
+DEBUG 2019-03-13 10:53:24,159 (OutgoingSessionNegotiation.java:334) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : waiting for peer to accept the invitation
+DEBUG 2019-03-13 10:53:26,351 (OutgoingSessionNegotiation.java:345) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : invitation accepted
+DEBUG 2019-03-13 10:53:26,352 (OutgoingSessionNegotiation.java:355) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : waiting for client's session parameters
+DEBUG 2019-03-13 10:53:26,469 (OutgoingSessionNegotiation.java:375) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : received client's session parameters
+DEBUG 2019-03-13 10:53:26,655 (WhiteboardManager.java:163) Detected  Whiteboard at adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:26,657 (OutgoingSessionNegotiation.java:427) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : sending updated session negotiation data
+DEBUG 2019-03-13 10:53:26,658 (OutgoingSessionNegotiation.java:434) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : sent updated session negotiation data
+DEBUG 2019-03-13 10:53:26,659 (OutgoingSessionNegotiation.java:444) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : waiting for remote side to start its Saros session
+DEBUG 2019-03-13 10:53:28,445 (ByteStreamTransport.java:72) received request to establish a  bytestream connection to adei@saros-con.imp.fu-berlin.de/Saros [de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport$1@3f9f6332]
+DEBUG 2019-03-13 10:53:28,445 (Socks5Transport.java:368) [SOCKS5Transport] receiving request from adei@saros-con.imp.fu-berlin.de/Saroswith local SOCKS5 proxy running [port=7777, configured streamhosts=[10.109.209.212, fe80:0:0:0:708f:1a65:98e3:a1df%wlan0]]
+DEBUG 2019-03-13 10:53:28,448 (Socks5Transport.java:624) [SOCKS5Transport] Start to establish new response connection
+DEBUG 2019-03-13 10:53:28,998 (Socks5Transport.java:122) [SOCKS5Transport] cancelling response connection as it is not needed
+DEBUG 2019-03-13 10:53:29,000 (Socks5Transport.java:742) nagle algorithm for socket disabled: true
+DEBUG 2019-03-13 10:53:29,001 (Socks5Transport.java:755) socket is configured with SO_LINGER timeout: 10000 ms
+DEBUG 2019-03-13 10:53:29,010 (DataTransferManager.java:136) bytestream connection changed [mode=SOCKS5 (D), id=saros-main-session] adei@saros-con.imp.fu-berlin.de/Saros, inc=true, pool id=saros-main-session:in:adei@saros-con.imp.fu-berlin.de/Saros]
+DEBUG 2019-03-13 10:53:29,013 (BinaryChannelConnection.java:103) [mode=SOCKS5 (D), id=saros-main-session] adei@saros-con.imp.fu-berlin.de/Saros ReceiverThread started.
+DEBUG 2019-03-13 10:53:29,274 (OutgoingSessionNegotiation.java:455) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : remote side started its Saros session
+DEBUG 2019-03-13 10:53:29,275 (OutgoingSessionNegotiation.java:472) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : synchronizing user list
+DEBUG 2019-03-13 10:53:29,280 (UserInformationHandler.java:152) synchronizing user list (A)[adei@saros-con.imp.fu-berlin.de/Saros, ander@saros-con.imp.fu-berlin.de/Saros], (R) [] with user(s) [adei@saros-con.imp.fu-berlin.de/Saros]
+DEBUG 2019-03-13 10:53:29,484 (UserInformationHandler.java:204) received user list confirmation from: adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:29,485 (UserInformationHandler.java:211) synchronized user list with user(s) [adei@saros-con.imp.fu-berlin.de/Saros]
+DEBUG 2019-03-13 10:53:29,489 (ChangeColorManager.java:290) reassigning color IDs for the current session users
+DEBUG 2019-03-13 10:53:29,492 (ChangeColorManager.java:357) color conflict resolve result = ALREADY SOLVED
+DEBUG 2019-03-13 10:53:29,494 (ChangeColorManager.java:383) new color assignment: {ander@saros-con.imp.fu-berlin.de/Saros=4, adei@saros-con.imp.fu-berlin.de/Saros=0}
+DEBUG 2019-03-13 10:53:29,496 (ChangeColorManager.java:634) updating color id set: [adei@saros-con.imp.fu-berlin.de, ander@saros-con.imp.fu-berlin.de]
+DEBUG 2019-03-13 10:53:29,504 (ActivitySequencer.java:496) send (001) adei@saros-con.imp.fu-berlin.de/Saros
+INFO  2019-03-13 10:53:29,507 (ParticipantCollector.java:67) adei@saros-con.imp.fu-berlin.de/Saros joined - session now contains 2 users
+INFO  2019-03-13 10:53:29,513 (SarosSession.java:456) user adei@saros-con.imp.fu-berlin.de/Saros joined session
+DEBUG 2019-03-13 10:53:29,513 (ActivitySequencer.java:496) send (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:29,514 (OutgoingSessionNegotiation.java:482) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : added adei@saros-con.imp.fu-berlin.de/Saros to the current session, colorID: 4
+DEBUG 2019-03-13 10:53:29,520 (OutgoingSessionNegotiation.java:501) OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : session negotiation finished
+DEBUG 2019-03-13 10:53:29,522 (WhiteboardManager.java:89) Preparing Whiteboard for sending an invitation
+DEBUG 2019-03-13 10:53:29,810 (ColorUtils.java:21) set foregroundcolor RGB {137, 180, 178}
+DEBUG 2019-03-13 10:53:29,817 (SXEController.java:120) SXE (6025): initialize session at inviter side
+DEBUG 2019-03-13 10:53:29,821 (SXEOutgoingSynchronizationProcess.java:51) SXE(6025)  send state-offer to adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:29,822 (SarosSXETransmitter.java:151) SXE send state-offer to adei@saros-con.imp.fu-berlin.de/Saros waiting for [accept-state, refuse-state]
+INFO  2019-03-13 10:53:29,876 (DataTransferManager.java:409) establishing connection to adei@saros-con.imp.fu-berlin.de/Saros from ander@saros-con.imp.fu-berlin.de/Saros using transport XMPP-Socks5-Transport
+DEBUG 2019-03-13 10:53:29,876 (ByteStreamTransport.java:45) establishing bytestream connection to adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:29,877 (Socks5Transport.java:493) [SOCKS5Transport] establishing connection to adei@saros-con.imp.fu-berlin.de/Saroswith local SOCKS5 proxy running [port=7777, configured streamhosts=[10.109.209.212, fe80:0:0:0:708f:1a65:98e3:a1df%wlan0]]...
+DEBUG 2019-03-13 10:53:29,916 (MultiUserChat.java:133) processPacket called
+DEBUG 2019-03-13 10:53:29,917 (MultiUserChatStateManager.java:101) Incoming Message from saros_1470322495@conference.saros-con.imp.fu-berlin.de/adei@saros-con.imp.fu-berlin.de/Saros with state: active
+DEBUG 2019-03-13 10:53:29,917 (MultiUserChat.java:79) stateChanged fired with state: active
+DEBUG 2019-03-13 10:53:30,204 (Socks5Transport.java:135) [SOCKS5Transport] Exception while waiting to close unneeded connection: item-not-found(404) Could not establish socket with any provided host
+WARN  2019-03-13 10:53:31,764 (Socks5Transport.java:544) [SOCKS5Transport] could not establish a connection to adei@saros-con.imp.fu-berlin.de/Saros, remote side could not connect to any offered stream hosts: item-not-found(404) Could not establish socket with any provided host
+DEBUG 2019-03-13 10:53:31,769 (Socks5Transport.java:567) [SOCKS5Transport] waiting for adei@saros-con.imp.fu-berlin.de/Saros to establish a connection...
+DEBUG 2019-03-13 10:53:33,028 (ByteStreamTransport.java:72) received request to establish a  bytestream connection to adei@saros-con.imp.fu-berlin.de/Saros [de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport$1@3f9f6332]
+DEBUG 2019-03-13 10:53:33,029 (Socks5Transport.java:311) [SOCKS5Transport] receiving response connection from adei@saros-con.imp.fu-berlin.de/Saroswith local SOCKS5 proxy running [port=7777, configured streamhosts=[10.109.209.212, fe80:0:0:0:708f:1a65:98e3:a1df%wlan0]]
+DEBUG 2019-03-13 10:53:33,513 (Socks5Transport.java:577) [SOCKS5Transport] response connection is direct! Discarding the other.
+DEBUG 2019-03-13 10:53:33,514 (Socks5Transport.java:742) nagle algorithm for socket disabled: true
+DEBUG 2019-03-13 10:53:33,515 (Socks5Transport.java:755) socket is configured with SO_LINGER timeout: 10000 ms
+DEBUG 2019-03-13 10:53:33,517 (DataTransferManager.java:136) bytestream connection changed [mode=SOCKS5 (D), id=default] adei@saros-con.imp.fu-berlin.de/Saros, inc=false, pool id=default:out:adei@saros-con.imp.fu-berlin.de/Saros]
+DEBUG 2019-03-13 10:53:33,519 (BinaryChannelConnection.java:103) [mode=SOCKS5 (D), id=default] adei@saros-con.imp.fu-berlin.de/Saros ReceiverThread started.
+DEBUG 2019-03-13 10:53:33,615 (SXEOutgoingSynchronizationProcess.java:70) SXE(6025) adei@saros-con.imp.fu-berlin.de/Saros accepted state-offer
+DEBUG 2019-03-13 10:53:33,628 (SXEOutgoingSynchronizationProcess.java:89) SXE(6025) Sending state to adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:33,631 (SXEOutgoingSynchronizationProcess.java:91) Send message: de.fu_berlin.inf.dpp.whiteboard.sxe.net.SXEMessage@739780b4: from: null, to: adei@saros-con.imp.fu-berlin.de/Saros, msgId: 1messageTyp: statemessage: [new type=element rid=155247076133745935 visible=true name=svg ns=http://www.w3.org/2000/svg version=0, ]
+DEBUG 2019-03-13 10:53:33,635 (CancelableProcess.java:353) process OSN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] exit status: OK
+INFO  2019-03-13 10:53:33,649 (ProjectNegotiationObservable.java:51) This is ProjectNegotiation number 1 in this session. There are 0 process(es) in this session
+DEBUG 2019-03-13 10:53:33,965 (OutgoingProjectNegotiation.java:181) OPN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : sending file list
+DEBUG 2019-03-13 10:53:33,985 (OutgoingProjectNegotiation.java:214) OPN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : waiting for remote file list
+DEBUG 2019-03-13 10:53:52,172 (OutgoingProjectNegotiation.java:232) OPN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : remote file list has been received
+DEBUG 2019-03-13 10:53:52,174 (OutgoingProjectNegotiation.java:270) OPN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : stopping users [adei@saros-con.imp.fu-berlin.de/Saros, ander@saros-con.imp.fu-berlin.de/Saros]
+DEBUG 2019-03-13 10:53:52,189 (ActivitySequencer.java:496) send (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:52,192 (EditorManager.java:1697) locking all editors
+DEBUG 2019-03-13 10:53:52,198 (StopManager.java:239) added StartHandle (ander@saros-con.imp.fu-berlin.de/Saros, 105352179-1562455646120830183, startable) to resulting handles.
+DEBUG 2019-03-13 10:53:52,488 (ActivitySequencer.java:546) rcvd (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:52,490 (StopManager.java:390) Acknowledgment arrived adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:52,491 (StopManager.java:239) added StartHandle (adei@saros-con.imp.fu-berlin.de/Saros, 1053521798651181175587939776, startable) to resulting handles.
+INFO  2019-03-13 10:53:52,613 (SarosSession.java:462) user adei@saros-con.imp.fu-berlin.de/Saros started queuing projects and can receive IResourceActivities
+DEBUG 2019-03-13 10:53:52,616 (OutgoingProjectNegotiation.java:353) OPN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : creating archive
+DEBUG 2019-03-13 10:53:52,633 (CreateArchiveTask.java:140) created archive C:\Users\ANDER\AppData\Local\Temp\saros_-420260810552361656296091512735437128.zip I/O: [1,2 kB in < 1 s at 102,0 kB/s]
+DEBUG 2019-03-13 10:53:52,634 (OutgoingProjectNegotiation.java:288) OPN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : restarting user ander@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:52,635 (StartHandle.java:58) Called start on ander@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:52,635 (StopManager.java:430) StartHandle (ander@saros-con.imp.fu-berlin.de/Saros, 105352179-1562455646120830183, not startable) couldn't be removed because it doesn't exist any more.
+DEBUG 2019-03-13 10:53:52,636 (EditorManager.java:1697) unlocking all editors
+DEBUG 2019-03-13 10:53:52,637 (OutgoingProjectNegotiation.java:288) OPN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : restarting user adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:52,637 (StartHandle.java:58) Called start on adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:52,637 (OutgoingProjectNegotiation.java:390) OPN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : sending archive
+DEBUG 2019-03-13 10:53:52,637 (ActivitySequencer.java:496) send (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:52,668 (ActivitySequencer.java:496) send (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:52,803 (ActivitySequencer.java:546) rcvd (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:56,055 (OutgoingProjectNegotiation.java:407) OPN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] : archive send
+INFO  2019-03-13 10:53:56,056 (SarosSession.java:482) user adei@saros-con.imp.fu-berlin.de/Saros now has Projects and can process IResourceActivities
+DEBUG 2019-03-13 10:53:56,065 (ActivitySequencer.java:496) send (002) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:56,070 (ActivitySequencer.java:496) send (002) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:56,071 (CancelableProcess.java:353) process OPN [remote side: adei@saros-con.imp.fu-berlin.de/Saros] exit status: OK
+DEBUG 2019-03-13 10:53:56,129 (ActivitySequencer.java:546) rcvd (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:53:56,964 (ActivitySequencer.java:546) rcvd (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:54:00,993 (ActivitySequencer.java:496) send (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:54:00,997 (ActivitySequencer.java:496) send (002) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:54:01,071 (ActivitySequencer.java:496) send (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:54:01,141 (EditorListener.java:236) Viewport changed: 0+6
+DEBUG 2019-03-13 10:54:01,145 (ActivitySequencer.java:496) send (002) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:54:02,669 (ActivitySequencer.java:496) send (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:54:12,672 (ActivitySequencer.java:496) send (001) adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:54:14,684 (XMPPConnectionService.java:398) ander@saros-con.imp.fu-berlin.de/Saros new connection state == DISCONNECTING
+DEBUG 2019-03-13 10:54:14,686 (BinaryChannelConnection.java:109) [mode=SOCKS5 (D), id=saros-main-session] adei@saros-con.imp.fu-berlin.de/Saros connection closed locally: Socket closed
+DEBUG 2019-03-13 10:54:14,686 (ConnectionPool.java:52) closed connection [id=saros-main-session:in:adei@saros-con.imp.fu-berlin.de/Saros]: [mode=SOCKS5 (D), id=saros-main-session] adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:54:14,687 (BinaryChannelConnection.java:109) [mode=SOCKS5 (D), id=default] adei@saros-con.imp.fu-berlin.de/Saros connection closed locally: Socket closed
+DEBUG 2019-03-13 10:54:14,688 (ConnectionPool.java:52) closed connection [id=default:out:adei@saros-con.imp.fu-berlin.de/Saros]: [mode=SOCKS5 (D), id=default] adei@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2019-03-13 10:54:14,689 (SarosSessionManager.java:330) terminating all running negotiation processes
+DEBUG 2019-03-13 10:54:14,690 (SarosSessionManager.java:337) Leave message sent.
+DEBUG 2019-03-13 10:54:14,695 (ActivityHandler.java:109) activity dispatcher stopped
+INFO  2019-03-13 10:54:14,696 (FeedbackManager.java:104) Session lasted 0 min 52 s
+DEBUG 2019-03-13 10:54:14,698 (FollowModeCollector.java:177) Processing follow mode changes took 0.0 s
+INFO  2019-03-13 10:54:14,700 (ParticipantCollector.java:145) Session ended: Current number of participants: 2
+DEBUG 2019-03-13 10:54:14,709 (StatisticManager.java:329) Session statistic:
+  auto.followmode.enabled=false
+  data_transfer.SOCKS5 (D).average_throughput_kbs=0.6
+  data_transfer.SOCKS5 (D).number_of_events=31
+  data_transfer.SOCKS5 (D).total_size_kb=5
+  data_transfer.SOCKS5 (D).total_time_ms=9023
+  feedback.disabled=false
+  feedback.survey.interval=5
+  followmode.time.percent=0
+  followmode.time.total=0.0
+  followmode.toggles=0
+  gesture.count=0
+  java.version=1.8.0_201
+  jumped.count=0
+  jumped.driver.count=0
+  jumped.observer.count=0
+  observer.selection.count.witnessed=0
+  observer.selection.count=0
+  os.name=Windows 10
+  platform.version=3.12.0.v20160606-1342
+  random.user.id=2019-03-13_10-54-14_866273980
+  role.1.duration=0.87
+  role.1=write_access
+  role.changes=0
+  role.driver.duration=0.87
+  role.driver.percent=100
+  role.observer.duration=0.0
+  role.observer.percent=0
+  saros.version=14.10.31
+  session.count=2
+  session.id=1470322495
+  session.local.start=2019-03-13T09:54:14Z
+  session.shared.project.complete.count=1
+  session.shared.project.partial.count=0
+  session.shared.project.partial.files.count=0
+  session.time.users.1.percent=13
+  session.time.users.1=0.12
+  session.time.users.2.percent=87
+  session.time.users.2=0.75
+  session.time=0.87
+  session.users.total=2
+  textedits.chars=0
+  textedits.count=0
+  textedits.nonparallel.chars=0
+  textedits.nonparallel.percent=0
+  textedits.pastes.chars=0
+  textedits.pastes=0
+  user.is.host=true
+INFO  2019-03-13 10:54:14,710 (StatisticManager.java:243) User does not allow to submit session statistics
+DEBUG 2019-03-13 10:54:14,724 (EditorManager.java:1697) unlocking all editors
+WARN  2019-03-13 10:54:14,727 (SarosSession.java:655) failed to notify user adei@saros-con.imp.fu-berlin.de/Saros about local session stop
+java.io.IOException: not connected to a XMPP server
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.sendData(DataTransferManager.java:200)
+	at de.fu_berlin.inf.dpp.net.internal.XMPPTransmitter.send(XMPPTransmitter.java:90)
+	at de.fu_berlin.inf.dpp.project.internal.SarosSession.stop(SarosSession.java:651)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.stopSarosSession(SarosSessionManager.java:340)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager$2.connectionStateChanged(SarosSessionManager.java:152)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService.setConnectionState(XMPPConnectionService.java:405)
+	at de.fu_berlin.inf.dpp.net.xmpp.XMPPConnectionService.disconnect(XMPPConnectionService.java:304)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler.disconnectXMPPInternal(ConnectionHandler.java:225)
+	at de.fu_berlin.inf.dpp.communication.connection.ConnectionHandler.disconnect(ConnectionHandler.java:211)
+	at de.fu_berlin.inf.dpp.ui.actions.ChangeXMPPAccountAction$7.run(ChangeXMPPAccountAction.java:218)
+	at de.fu_berlin.inf.dpp.util.ThreadUtils$1.run(ThreadUtils.java:38)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2019-03-13 10:54:14,732 (XStreamExtensionProvider.java:169) Unregistering (resetting) converter of class de.fu_berlin.inf.dpp.misc.xstream.SPathConverter
+DEBUG 2019-03-13 10:54:14,732 (XStreamExtensionProvider.java:216) Unregistering (resetting) converter of class de.fu_berlin.inf.dpp.misc.xstream.UserConverter
+DEBUG 2019-03-13 10:54:14,734 (SharedProjectDecorator.java:93) clearing project decoration for all shared projects
+DEBUG 2019-03-13 10:54:14,735 (DocumentRecord.java:93) Added Node: attr(155247085473529862) name=svg
+DEBUG 2019-03-13 10:54:14,765 (MultiUserChatService.java:135) leaving multi user chat de.fu_berlin.inf.dpp.communication.chat.muc.MultiUserChat@49dfd9a1
+INFO  2019-03-13 10:54:14,860 (SarosSessionManager.java:351) session stopped
+DEBUG 2019-03-13 10:54:15,020 (XMPPConnectionService.java:398)  new connection state == NOT_CONNECTED
+DEBUG 2019-03-13 10:54:58,587 (UPnPServiceImpl.java:295) deleting existing port mappings

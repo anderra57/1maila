@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Teklatua.java&apos; to &apos;adeii/src&apos;&#x0D;&#x0A;- Original project: &apos;proiektua&apos;&#x0D;&#x0A;- Destination element: &apos;adeii/src&apos;&#x0D;&#x0A;- Original element: &apos;packproiektua.Teklatua.java&apos;" description="Copy compilation unit" destination="=adeii/src" element1="/proiektua&lt;packproiektua{Teklatua.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1557440503597" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;adei/proiektua.cld-1.xml&apos; to &apos;proiektua.cld&apos;" description="Rename resource &apos;proiektua.cld-1.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="proiektua.cld-1.xml" name="proiektua.cld" stamp="1552648017708" updateReferences="true"/>
+</session>

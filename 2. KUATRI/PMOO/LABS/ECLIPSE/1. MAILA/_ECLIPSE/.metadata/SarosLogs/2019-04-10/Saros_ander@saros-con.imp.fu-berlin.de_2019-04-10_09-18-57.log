@@ -1,0 +1,84 @@
+INFO  2019-04-10 09:18:27,553 (Saros.java:220) Starting Saros 14.10.31 running:
+  Java Version: 1.8.0_201
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.12.0.v20160606-1342
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  2019-04-10 09:18:27,646 (SarosContext.java:153) creating Saros runtime context...
+DEBUG 2019-04-10 09:18:27,840 (XMPPAccountStore.java:117) loading accounts from file: C:\Users\ANDER\.saros\config.dat
+DEBUG 2019-04-10 09:18:29,246 (XMPPAccountStore.java:176) loaded 1 account(s)
+INFO  2019-04-10 09:18:29,747 (SarosContext.java:199) successfully created Saros runtime context
+DEBUG 2019-04-10 09:18:29,789 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+INFO  2019-04-10 09:18:29,837 (PreferenceInitializer.java:50) initializing preference default values
+DEBUG 2019-04-10 09:18:30,017 (SarosAnnotation.java:117) resetting annotation colors
+DEBUG 2019-04-10 09:18:30,056 (Saros.java:430) skipping conversion of old XMPP accounts, because there are already new ones
+DEBUG 2019-04-10 09:18:42,741 (SharedDocumentProvider.java:77) SharedDocumentProvider created by Eclipse
+DEBUG 2019-04-10 09:18:52,650 (WhiteboardManager.java:194) WhiteboardManager instantiated
+DEBUG 2019-04-10 09:18:52,677 (DocumentRecord.java:93) Added Node: attr(155488073267446708) name=svg
+DEBUG 2019-04-10 09:18:53,769 (XMPPConnectionService.java:439) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2019-04-10 09:18:54,934 (XMPPConnectionService.java:459) using autodetected addresses: [10.109.209.212, 158.227.185.89, fe80:0:0:0:8190:1e66:d21f:28a4%eth4, fe80:0:0:0:c3f8:a333:4ce2:acae%eth4, fe80:0:0:0:708f:1a65:98e3:a1df%wlan0]
+DEBUG 2019-04-10 09:18:54,951 (XMPPConnectionService.java:398)  new connection state == CONNECTING
+ERROR 2019-04-10 09:18:55,821 (StunServiceImpl.java:263) error sending STUN request
+java.net.SocketException: Network is unreachable: Datagram send failed
+	at java.net.DualStackPlainDatagramSocketImpl.socketSend(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.send(Unknown Source)
+	at java.net.DatagramSocket.send(Unknown Source)
+	at de.fu_berlin.inf.dpp.net.stun.internal.StunServiceImpl$StunDiscovery$1.run(StunServiceImpl.java:255)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2019-04-10 09:18:57,149 (XMPPConnectionService.java:398) ander@saros-con.imp.fu-berlin.de/Saros new connection state == CONNECTED
+DEBUG 2019-04-10 09:18:57,152 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+DEBUG 2019-04-10 09:18:57,164 (SkypeManager.java:289) Refreshing Skype username cache...
+WARN  2019-04-10 09:19:05,820 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /10.109.209.212:0
+WARN  2019-04-10 09:19:05,820 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /158.227.185.89:0
+ERROR 2019-04-11 18:16:50,061 (XMPPConnectionService.java:101) XMPP connection error: 
+java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.security.ssl.InputRecord.readFully(Unknown Source)
+	at sun.security.ssl.InputRecord.read(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(Unknown Source)
+	at sun.security.ssl.AppInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.read1(Unknown Source)
+	at java.io.BufferedReader.read(Unknown Source)
+	at org.xmlpull.mxp1.MXParser.fillBuf(MXParser.java:2992)
+	at org.xmlpull.mxp1.MXParser.more(MXParser.java:3046)
+	at org.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1144)
+	at org.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:312)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+ERROR 2019-04-11 18:16:50,186 (XMPPConnectionService.java:400)  new connection state == ERROR
+java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.security.ssl.InputRecord.readFully(Unknown Source)
+	at sun.security.ssl.InputRecord.read(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(Unknown Source)
+	at sun.security.ssl.AppInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.read1(Unknown Source)
+	at java.io.BufferedReader.read(Unknown Source)
+	at org.xmlpull.mxp1.MXParser.fillBuf(MXParser.java:2992)
+	at org.xmlpull.mxp1.MXParser.more(MXParser.java:3046)
+	at org.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1144)
+	at org.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:312)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+DEBUG 2019-04-11 18:16:50,272 (XMPPConnectionService.java:398)  new connection state == NOT_CONNECTED
+DEBUG 2019-04-13 14:06:36,856 (UPnPServiceImpl.java:295) deleting existing port mappings

@@ -1,0 +1,10 @@
+﻿Joko honetara jokatzea erreza da. Posibleak diren ekintzen
+lista agertuko da, eta zuk egin nahi duzun ekintzaren ondoan
+dagoen zenbakia sartu behar duzu.
+
+Gerta liteke mapaz aldatzeko ekintza guztiak hasieratik ez
+egotea aukeratzeko, eta pertsonai guztiek emandako pistekin
+desblokeatu behar izatea. Gainera, batzutan pertsonaiak ez
+dizute informaziorik emango hasieratik...
+
+Azkenengo mapa berezia da. Hara heltzean konturatuko zara...

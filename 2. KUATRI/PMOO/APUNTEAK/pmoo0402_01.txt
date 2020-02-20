@@ -1,0 +1,22 @@
+public Pertsona (double pAltuera, int pAdina, String pIzena, 				, String pJaiotzeData){
+this.altuera=pAltuera;
+this.adina=pAdina;
+this.izena=pIzena;
+
+this.jaiotzeData=pJaiotzeData;
+this.kutxa=new kutxa(pJaiotzeData)
+}
+
+public Pertsona(){
+this.adina=10;
+}
+
+public void norberarenKutxarenGakoaAldatu(String pGakoZaharra, String pGakoBerria){
+this.kutxa.aldatuGakoa(pGakoZaharra, pGakoBerria);
+}
+
+public void aldatuGakoa(String pGakoZaharra, String pGakoBerria){
+if (this.gakoa == pGakoZaharra) {
+	this.gakoa=pGakoBerria
+	}
+}

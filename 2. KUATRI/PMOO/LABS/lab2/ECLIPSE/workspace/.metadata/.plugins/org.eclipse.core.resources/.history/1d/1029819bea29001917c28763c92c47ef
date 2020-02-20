@@ -1,0 +1,53 @@
+package org.pmoo;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class PertsonaTest {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+	//atributuak
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testPertsona() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testIdBerdinaDu() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGidatuDezake() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testOdolaEmanDiezaioke() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetIzenarenIniziala() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetAbizenarenIniziala() {
+		fail("Not yet implemented");
+	}
+
+	//eraikitzaileak
+
+	//gainontzeko metodoak
+}
