@@ -1,0 +1,24 @@
+[GENERATED OBJECT FILE]
+b__proba_bataz_bestekoa.o
+[PROJECT FILES]
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik2/lab10_arik2.gpr
+20181216164753
+[BOUND OBJECT FILES]
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik2/obj/datuak.o
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik2/obj/bataz_bestekoa.o
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik2/obj/idatzi.o
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik2/obj/sortu_zerrenda_hutsa.o
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik2/obj/txertatu_hasieran.o
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik2/obj/proba_bataz_bestekoa.o
+[GENERATED SOURCE FILES]
+b__proba_bataz_bestekoa.ads
+b__proba_bataz_bestekoa.adb
+b__proba_bataz_bestekoa.ali
+[RESULTING OPTIONS]
+-L/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik2/obj/
+-L/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik2/obj/
+-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/adalib/
+-static
+-static-libgcc
+/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/adalib/libgnat.a
+-ldl

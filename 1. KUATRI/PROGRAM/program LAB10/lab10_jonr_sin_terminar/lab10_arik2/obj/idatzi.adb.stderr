@@ -1,0 +1,2 @@
+idatzi.adb:1:09: warning: no entities of "Ada.Text_IO" are referenced
+idatzi.adb:2:01: warning: use clause for package "Text_IO" has no effect

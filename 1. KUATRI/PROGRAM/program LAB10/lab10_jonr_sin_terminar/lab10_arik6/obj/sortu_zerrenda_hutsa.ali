@@ -1,0 +1,29 @@
+V "GNAT Lib v8"
+A -gnatA
+A -g
+A -g
+A -gnato
+A -gnatwa
+A -gnatQ
+A -gnat05
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sortu_zerrenda_hutsa%b  sortu_zerrenda_hutsa.adb  239ea924 NE OO SU IL
+W datuak%s		datuak.ads		datuak.ali
+
+D datuak.ads		20181219092218 3c685009 datuak%s
+D sortu_zerrenda_hutsa.adb  20181219092208 1ff6f92d sortu_zerrenda_hutsa%b
+D system.ads		20181129114820 4635ec04 system%s
+X 1 datuak.ads
+1K9*datuak 10e11 2|1w6 2r5
+4P14*Lista(3R14) 2|4r39
+X 2 sortu_zerrenda_hutsa.adb
+4U11*sortu_zerrenda_hutsa 4b11 4<33 7l5 7t25
+4p33 L{1|4P14} 6m9
+

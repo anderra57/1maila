@@ -1,0 +1,37 @@
+V "GNAT Lib v8"
+A -gnatA
+A -g
+A -g
+A -gnato
+A -gnatwa
+A -gnatQ
+A -gnat05
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_LOCAL_ALLOCATORS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U txertatu_hasieran%b	txertatu_hasieran.adb	88f66c24 NE OO SU IL
+W datuak%s		datuak.ads		datuak.ali
+
+D datuak.ads		20181216160819 3c685009 datuak%s
+D system.ads		20181129114820 4635ec04 system%s
+D txertatu_hasieran.adb	20181216160809 b49e3c2d txertatu_hasieran%b
+X 1 datuak.ads
+1K9*datuak 10e11 3|1w6 2r5
+3R14*Nodo 8e19 3|12r23
+4P14*Lista(3R14) 3|5r22 9r18
+6i17*Info{integer} 3|13m16
+7p17*Hurrengoa{4P14} 3|14m16
+X 3 txertatu_hasieran.adb
+4U11*txertatu_hasieran 4b11 5=9 6>9 17l5 17t22
+5p9 L{1|4P14} 14r29 15m9
+6i9 Zen{integer} 13r24
+9p9 Berria{1|4P14} 12m9 13r9 14r9 15r14
+

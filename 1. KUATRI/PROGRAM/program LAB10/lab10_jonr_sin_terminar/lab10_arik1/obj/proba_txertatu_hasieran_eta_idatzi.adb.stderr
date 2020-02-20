@@ -1,0 +1,9 @@
+idatzi.adb:13:21: prefix for "Length" attribute must be array
+idatzi.adb:14:17: "put" is not visible
+idatzi.adb:14:17: non-visible declaration at a-tiinio.ads:76, instance at a-inteio.ads:18
+idatzi.adb:14:17: non-visible declaration at a-tiinio.ads:66, instance at a-inteio.ads:18
+idatzi.adb:14:17: non-visible declaration at a-tiinio.ads:60, instance at a-inteio.ads:18
+idatzi.adb:14:17: non-visible declaration at a-textio.ads:242
+idatzi.adb:14:17: non-visible declaration at a-textio.ads:241
+idatzi.adb:14:17: non-visible declaration at a-textio.ads:208
+idatzi.adb:14:17: non-visible declaration at a-textio.ads:207

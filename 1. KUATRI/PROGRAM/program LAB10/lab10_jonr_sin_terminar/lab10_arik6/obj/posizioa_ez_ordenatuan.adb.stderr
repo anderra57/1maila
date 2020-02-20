@@ -1,0 +1,2 @@
+posizioa_ez_ordenatuan.adb:4:09: warning: no entities of "ada.text_io" are referenced
+posizioa_ez_ordenatuan.adb:5:01: warning: use clause for package "Text_IO" has no effect

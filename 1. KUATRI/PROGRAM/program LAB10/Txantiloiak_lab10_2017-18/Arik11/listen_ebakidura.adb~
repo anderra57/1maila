@@ -1,0 +1,17 @@
+with datuak; use datuak;
+
+function listen_ebakidura (
+      L1,               
+      L2 : in     Lista ) 
+  return Lista is 
+   -- aurre: 
+   -- post: itzultzen duen zerrendak L1 eta L2 zerrendetan dauden elementuak izango ditu
+   --       hau da, L1 eta L2 zerrenden arteko ebakidura
+
+begin
+
+
+
+
+end interseccion;
+

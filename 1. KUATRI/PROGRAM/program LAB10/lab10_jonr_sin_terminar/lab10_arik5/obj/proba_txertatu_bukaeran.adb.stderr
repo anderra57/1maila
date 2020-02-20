@@ -1,0 +1,2 @@
+txertatu_bukaeran.adb:24:19: expected type "Lista" defined at datuak.ads:4
+txertatu_bukaeran.adb:24:19: found type "Standard.Integer"

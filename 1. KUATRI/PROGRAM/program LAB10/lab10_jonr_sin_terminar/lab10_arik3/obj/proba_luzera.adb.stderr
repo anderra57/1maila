@@ -1,0 +1,13 @@
+idatzi.adb:13:21: prefix for "Length" attribute must be array
+idatzi.adb:14:17: "put" is not visible
+idatzi.adb:14:17: non-visible declaration at a-tiinio.ads:76, instance at a-inteio.ads:18
+idatzi.adb:14:17: non-visible declaration at a-tiinio.ads:66, instance at a-inteio.ads:18
+idatzi.adb:14:17: non-visible declaration at a-tiinio.ads:60, instance at a-inteio.ads:18
+idatzi.adb:14:17: non-visible declaration at a-textio.ads:242
+idatzi.adb:14:17: non-visible declaration at a-textio.ads:241
+idatzi.adb:14:17: non-visible declaration at a-textio.ads:208
+idatzi.adb:14:17: non-visible declaration at a-textio.ads:207
+luzera.adb:11:32: invalid operand types for operator "="
+luzera.adb:11:32: left operand has type "Standard.Integer"
+luzera.adb:11:32: right operand has an access type
+luzera.adb:13:18: invalid procedure or entry call

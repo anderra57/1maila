@@ -1,0 +1,7 @@
+posizio_ordenatuan.adb:2:06: file "datuak.ads" not found
+posizio_ordenatuan.adb:2:06: warning: unit "Datuak" is not referenced
+posizio_ordenatuan.adb:3:05: "Datuak" is undefined
+posizio_ordenatuan.adb:6:01: warning: use clause for package "Text_IO" has no effect
+posizio_ordenatuan.adb:8:01: missing "return" statement in function body
+posizio_ordenatuan.adb:9:40: "Lista" is undefined
+posizio_ordenatuan.adb:17:01: missing "begin" for function "posizio_ordenatuan" at line 8

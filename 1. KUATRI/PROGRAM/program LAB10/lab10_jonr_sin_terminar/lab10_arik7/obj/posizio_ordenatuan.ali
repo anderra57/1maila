@@ -1,0 +1,45 @@
+V "GNAT Lib v8"
+A -gnatA
+A -g
+A -g
+A -gnato
+A -gnatwa
+A -gnatQ
+A -gnat05
+A -mtune=generic
+A -march=x86-64
+P CE NO ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U posizio_ordenatuan%b	posizio_ordenatuan.adb	e4847dc2 OO SE SU IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W datuak%s		datuak.ads		datuak.ali
+
+D ada.ads		20181129114820 76789da1 ada%s
+D a-ioexce.ads		20181129114820 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20181129114820 119b8fb3 ada.streams%s
+D a-textio.ads		20181129114820 881db35a ada.text_io%s
+D datuak.ads		00000000000000 00000000
+D interfac.ads		20181129114820 5ab55268 interfaces%s
+D i-cstrea.ads		20181129114820 e53d8b8e interfaces.c_streams%s
+D posizio_ordenatuan.adb  20151201224110 6c99ce98 posizio_ordenatuan%b
+D system.ads		20181129114820 4635ec04 system%s
+D s-crtl.ads		20181129114820 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20181129114820 078245e4 system.file_control_block%s
+D s-parame.ads		20181129114820 f896c45c system.parameters%s
+D s-wchcon.ads		20181129114820 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 8|5r6 6r5
+X 4 a-textio.ads
+49K13*Text_IO 471e16 8|5w10 6r9
+X 8 posizio_ordenatuan.adb
+8V10*posizio_ordenatuan{natural} 8b10 9>34 10>34 17l5 17t23
+9i34 L{any type}
+10i34 N{integer}
+

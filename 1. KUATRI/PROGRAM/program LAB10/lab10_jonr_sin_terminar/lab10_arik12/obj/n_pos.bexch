@@ -1,0 +1,22 @@
+[MAPPING FILE]
+/tmp/GNAT-TEMP-000015.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 8
+[MAIN BASE NAME]
+n_pos
+[COMPILER PATH]
+/usr/bin/gcc
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+[MAIN DEPENDENCY FILE]
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik12/obj/n_pos.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=
+[PROJECT FILES]
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik12/lab10_arik12.gpr
+20181219111957

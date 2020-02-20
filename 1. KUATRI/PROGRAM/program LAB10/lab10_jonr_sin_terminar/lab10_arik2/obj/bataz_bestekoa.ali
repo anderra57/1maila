@@ -1,0 +1,36 @@
+V "GNAT Lib v8"
+A -gnatA
+A -g
+A -g
+A -gnato
+A -gnatwa
+A -gnatQ
+A -gnat05
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U bataz_bestekoa%b	bataz_bestekoa.adb	7812b349 NE OO SU IL
+W datuak%s		datuak.ads		datuak.ali
+
+D bataz_bestekoa.adb	20181219083955 447ae340 bataz_bestekoa%b
+D datuak.ads		20181216160819 3c685009 datuak%s
+D system.ads		20181129114820 4635ec04 system%s
+X 1 bataz_bestekoa.adb
+4V10*bataz_bestekoa{float} 4b10 4>26 22l5 22t19
+4p26 L{2|4P14} 13r20 16r28
+7f9 totala{float} 15m17 15r27 20r17
+8i9 i{integer} 17m17 17r22 20r30
+9p9 egungoa{2|4P14} 13m9 14r25 15r42 16m17
+X 2 datuak.ads
+1K9*datuak 1|1w6 2r5 2|10e11
+4P14*Lista(3R14) 1|4r32 9r18
+6i17*Info{integer} 1|15r50
+7p17*Hurrengoa{4P14} 1|16r30
+

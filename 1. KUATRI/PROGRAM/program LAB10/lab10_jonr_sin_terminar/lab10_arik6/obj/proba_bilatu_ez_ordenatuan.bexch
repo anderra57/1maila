@@ -1,0 +1,24 @@
+[GENERATED OBJECT FILE]
+b__proba_bilatu_ez_ordenatuan.o
+[PROJECT FILES]
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik6/lab10_arik6.gpr
+20181219092426
+[BOUND OBJECT FILES]
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik6/obj/datuak.o
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik6/obj/idatzi.o
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik6/obj/posizioa_ez_ordenatuan.o
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik6/obj/sortu_zerrenda_hutsa.o
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik6/obj/txertatu_hasieran.o
+/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik6/obj/proba_bilatu_ez_ordenatuan.o
+[GENERATED SOURCE FILES]
+b__proba_bilatu_ez_ordenatuan.ads
+b__proba_bilatu_ez_ordenatuan.adb
+b__proba_bilatu_ez_ordenatuan.ali
+[RESULTING OPTIONS]
+-L/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik6/obj/
+-L/home/jonr/Programming/ADA/eclipse_workspace/lab10_arik6/obj/
+-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/adalib/
+-static
+-static-libgcc
+/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/adalib/libgnat.a
+-ldl

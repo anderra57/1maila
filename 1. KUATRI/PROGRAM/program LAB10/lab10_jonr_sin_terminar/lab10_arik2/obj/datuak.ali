@@ -1,0 +1,28 @@
+V "GNAT Lib v8"
+A -gnatA
+A -g
+A -g
+A -gnato
+A -gnatwa
+A -gnatQ
+A -gnat05
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U datuak%s		datuak.ads		3c685009 NE OO PK IL
+
+D datuak.ads		20181216160819 3c685009 datuak%s
+D system.ads		20181129114820 4635ec04 system%s
+X 1 datuak.ads
+1K9*datuak 10l5 10e11
+3R14*Nodo 4r30 5c14 8e19
+4P14*Lista(3R14) 7r30
+6i17*Info{integer}
+7p17*Hurrengoa{4P14}
+

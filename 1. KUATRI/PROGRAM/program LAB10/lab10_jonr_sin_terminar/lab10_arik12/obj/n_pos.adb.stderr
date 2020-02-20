@@ -1,0 +1,6 @@
+n_pos.adb:6:06: warning: unit "sortu_zerrenda_hutsa" is not referenced
+n_pos.adb:6:28: warning: unit "idatzi" is not referenced
+n_pos.adb:6:36: warning: unit "txertatu_hasieran" is not referenced
+n_pos.adb:22:25: warning: variable "Lector" is not modified in loop body
+n_pos.adb:22:25: warning: possible infinite loop
+n_pos.adb:23:24: warning: "aux" may be referenced before it has a value

@@ -1,0 +1,69 @@
+V "GNAT Lib v8"
+A -gnatA
+A -g
+A -g
+A -gnato
+A -gnatwa
+A -gnatQ
+A -gnat05
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U idatzi%b		idatzi.adb		06352328 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W datuak%s		datuak.ads		datuak.ali
+
+D ada.ads		20181129114820 76789da1 ada%s
+D a-except.ads		20181129114820 291912d5 ada.exceptions%s
+D a-inteio.ads		20181129114820 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20181129114820 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20181129114820 119b8fb3 ada.streams%s
+D a-tags.ads		20181129114820 491b781d ada.tags%s
+D a-textio.ads		20181129114820 881db35a ada.text_io%s
+D a-tiinio.ads		20181129114820 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20181129114820 0e9b276f ada.unchecked_conversion%s
+D datuak.ads		20181216160819 3c685009 datuak%s
+D idatzi.adb		20181219084351 440b49df idatzi%b
+D interfac.ads		20181129114820 5ab55268 interfaces%s
+D i-cstrea.ads		20181129114820 e53d8b8e interfaces.c_streams%s
+D system.ads		20181129114820 4635ec04 system%s
+D s-crtl.ads		20181129114820 0ebbdb71 system.crtl%s
+D s-exctab.ads		20181129114820 54135002 system.exception_table%s
+D s-ficobl.ads		20181129114820 078245e4 system.file_control_block%s
+D s-parame.ads		20181129114820 f896c45c system.parameters%s
+D s-secsta.ads		20181129114820 283dec34 system.secondary_stack%s
+D s-soflin.ads		20181129114820 a7318a92 system.soft_links%s
+D s-stache.ads		20181129114820 a37c21ec system.stack_checking%s
+D s-stalib.ads		20181129114820 09bd3940 system.standard_library%s
+D s-stoele.ads		20181129114820 2dc34a04 system.storage_elements%s
+D s-traent.ads		20181129114820 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20181129114820 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20181129114820 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 1r19 2r5 2r18
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 11|1w23 2r22
+X 7 a-textio.ads
+49K13*Text_IO 471e16 11|1w10 2r9
+X 8 a-tiinio.ads
+66U14*Put 11|16s17[3|18]
+X 10 datuak.ads
+1K9*datuak 10e11 11|1w40 2r39
+4P14*Lista(3R14) 11|5r20 9r19
+6i17*Info{integer} 11|16r29
+7p17*Hurrengoa{4P14} 11|17r30
+X 11 idatzi.adb
+4U11*Idatzi 4b11 5>9 20l5 20t11
+5p9 L{10|4P14} 13r20 17r28
+9p9 Egungoa{10|4P14} 13m9 15r25 16r21 17m17
+
