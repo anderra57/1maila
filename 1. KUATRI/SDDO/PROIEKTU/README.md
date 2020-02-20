@@ -1,0 +1,1 @@
+PROIEKTUA EZ DABIL, ideiak hartzeko balio dezake
