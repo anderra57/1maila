@@ -1,0 +1,69 @@
+-- Esta sin corregir por KING Labaka no fiarse txabale
+
+
+
+Creo una estructura de datos:
+
+ type dia is record
+	total_horas: integer;
+	nombre_dia: string;
+ end record;
+
+ type dias is array (1..7) of dia;
+
+
+
+function dia_mas_ocupado (A: in Agenda_Semanal) return Dia_de_la_semana is 
+-- a para recorrer actividades
+
+	a, duracion,total_dia_max: integer;
+	indice_del_puto_dia: integer;
+
+-- duracion va a ser el fin menos el comienzo
+
+	aux: dia;
+
+
+
+begin
+	duracion:= 0;
+	total_dia:= 0;
+
+	for d in 0 .. A'pos(A'last) loop
+		a:= 1;
+		loop exit when a > A'val(d).Cuantas;
+			duracion:= A'val(d).info(a).intervalo.Fin - A'val(ind).info(a).intervalo.Comienzo;
+			if (duracion rem 100 /= 30) and (duracion rem 100 /= 00) then -- o si es setenta
+				duracion:= duracion - 40;
+			end if;
+			aux(d+1).total_horas := aux(d+1).total_horas + duracion;
+			a := a + 1;
+		end loop;
+	end loop;
+
+
+	-- Ahora encuentro el maximo en mi estructura de datos.
+
+	total_dia_max:= -1;
+	
+	a:= 1;
+	loop exit a > 7;
+		if aux(a).total_horas > total_dia_max then
+			total_dia_max := aux(a).total_horas;
+			indice_del_puto_dia:= a - 1;
+		end if;
+		a := a + 1;
+	end loop;
+
+	return A'val(indice_del_puto_dia);
+
+	
+
+end dia_mas_ocupado;
+
+
+	
+	
+
+
+

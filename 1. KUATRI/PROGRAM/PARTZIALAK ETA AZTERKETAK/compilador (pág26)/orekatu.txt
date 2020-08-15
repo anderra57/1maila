@@ -1,0 +1,41 @@
+
+with datuak;use datuak;
+
+function orekatu (T : in     katea) return Boolean is
+-- aurre: T barnean programako lerro bat du, non parentesiak edota giltzak izan ditzakeen
+--        Adib:         if (a > b) { b := a+n ) ; x+y }
+-- post: emaitza TRUE izango da orekatua badago, bestela FALSE
+
+   Tlag : katea;
+   I    : Integer;
+   Irten : Boolean := True;
+
+begin
+   Tlag.luzera := 0;
+   I := 1;
+
+   loop exit when T.luzera<I or Irten=False ;      --loop honekin '(' , ')' , '{' , '}' gordeko ditu erregistro laguntzailean
+      if T.karaktereak(I)= '(' or T.karaktereak(I)= '{' then    --baldintza honekin bakarrik giltzak ed parentesiakgordeko dira array berrian
+         Tlag.luzera := Tlag.luzera + 1;        --arrayaren indizearen eguneraketa
+         Tlag.karaktereak(Tlag.luzera):= T.karaktereak(I);          --array berrian guk esandako karaktereak gordeko dira
+      elsif T.karaktereak(I)= ')' or T.karaktereak(I)= '}' then
+         if Tlag.luzera = 0 then
+            Irten:=False;
+         elsif (Tlag.karaktereak(Tlag.luzera) = '(' and T.karaktereak(I)= ')') or
+            (Tlag.karaktereak(Tlag.luzera) = '{' and T.karaktereak(I)= '}') then
+            Tlag.luzera := Tlag.luzera-1;
+         else
+            Irten :=False;
+         end if;
+      end if;
+      I:= I+1;  --loopeko indizearen eguneraketa
+   end loop;
+
+   if Tlag.luzera /= 0 then
+      Irten:= False;
+   end if;
+
+
+   return   Irten ;
+
+end orekatu;

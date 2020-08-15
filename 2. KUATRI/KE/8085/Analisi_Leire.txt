@@ -1,0 +1,42 @@
+lxi hl,9100  ; HL-n gordetzen du helbidea
+
+mvi a,0 ; metagailuan 0 gorde
+
+mvi c,a ; c-n gorde a balioa
+
+mvi b,0  ; b-n gorde 0
+
+
+loop:
+
+mov a,m  ; HL-n dagoen balioa metagailuan gorde
+
+adi 0  ; metagailuan gordetzen da metagailuko balioa data hori gehituta
+
+cm check  ;call aurreko eragiketako balioa negatiboa bada,hau da, flaga S=1 bada check etiketara joko du, bestela jarraituko du prgrama. Eta call egitean pilan gordetzen du PC balioa
+ 
+
+inx hl  ; hl erakusleari bat gehitzen dio
+
+dcr c  ; c erregistroari bat kentzen dio
+
+jnz loop ;aurreko eragiketa 0 ez bada, hau da z flaga Z=0 bada loop etiketara doa, bestela programarekin jarraituko du
+
+ 
+jmp end ; baldintzarik gabeko jauzia, end etiketara joko du
+
+ 
+check:
+
+inr b ; b erregistroa bat gehitzen dio
+
+ret  ; call egiterakoan pilan gorde den PC-a berreskuratzen da
+ 
+
+end:
+
+mov a,b  ; metagailuan gorde b erregistroko balioa
+
+out 03 ; metagailuko balioa 3 atakatik atera
+
+; prgrama honek egiten duena honakoa da, 10 elementuko arraya zeharkatzen du eta 3 atakatik bueltatzen du zenbat zenbaki negatibo dituen arraya

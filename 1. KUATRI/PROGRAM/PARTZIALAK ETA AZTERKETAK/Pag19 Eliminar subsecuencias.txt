@@ -1,0 +1,66 @@
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+
+procedure Eliminar_subsecuencias_De_unos (L : in out Lista; N: in Integer) is
+    lag, lag_h: Lista ;
+    kont, i ,j ,k : Integer ;
+    jarraian, Lehena: Boolean;
+
+
+begin
+
+jarraian:= False;
+Lehena = False
+k:= 0;
+lag:= L;
+i:= 1;
+
+loop exit when lag= null;
+    if jarraian = False then
+        kont:= 0;
+    end if;
+    
+    if lag.info = 1 then
+        jarraian:= True;
+        kont:= kont +1;
+        if kont = N then 
+            lag:= L;
+            lag_h:= lag.hurrengoa;
+            j:= 0;
+            loop exit when j= i-kont   ; --loop honen hostean, lag ezabatu nahi dugun lehenengo batean (1) egongo da
+                lag:= lag.hurrengoa;
+                lag_h:= lag_hurengoa;
+                j= j+1;
+            end loop;
+            
+            if j=1 then
+                Lehena = True
+            else
+                Lehena = False
+            end if;
+            
+            loop exit when k= N  ; -- nahi elementu guztiak ezabatu dituenean
+
+                lag:=lag_h;
+                lag_h:=lag_h.hurrengoa;
+                K= K+1;
+            
+            end loop;
+            
+            If lehena then --ezabatu behar ditugun elementuak lehenengo zenbakiak badira, lag-en eguneraketak egingo ditugu, baina L-n ez dira gordeko, horregatik baldintza hau.
+            L:= lag;
+            end if;
+            
+        end if;
+        
+        i:= i +1;
+        
+    else 
+        jarraian := False;
+    
+    end if;
+    
+    lag:= lag.hurrengoa;
+end loop;
+
+end Eliminar_subsecuencias_De_unos;
